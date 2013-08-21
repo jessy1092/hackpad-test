@@ -1,0 +1,227 @@
+<html>
+<head>
+  <script type="text/javascript">
+  // <![CDATA[
+  var clientVars = { collab_client_vars: '' };
+  // ]]>
+  </script>
+  <style type="text/css">
+    body { background: #F0F0F0; }
+    #innerdocbody {
+      width: 590px;
+      margin: auto;
+      margin-top: 60px;
+      color: #333;
+      background-color: #fff;
+      font-size: 13px;
+      line-height: 17px;
+      font-family: 'Helvetica Neue';
+      border: 1px solid #CCC;
+
+      padding-top: 1px; /* important for some reason? */
+      padding-right: 10px;
+      padding-bottom: 8px;
+      padding-left: 0px /* prevents characters from looking chopped off in FF3 */;
+      overflow: hidden;
+      /* blank 1x1 gif, so that IE8 doesn't consider the body transparent */
+      background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+    }
+
+    #innerdocbody > div:first-child span {
+      font-size: 140%;
+      font-weight: bold;
+    }
+    #innerdocbody > div:first-child{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .gutter-noauthor {
+      padding-left: 15px;
+    }
+
+    .inline-img {
+      max-width:400px;
+      max-height:300px;
+      width: expression(this.width > 400 ? 400: true);
+      height: expression(this.height > 300 ? 300: true);
+    }
+
+    .inline-tex{
+      border: 1px solid transparent;
+    }
+
+    .inline-tex:hover {
+      border: 1px dashed red;
+    }
+
+    a.attrlink {
+      /*  font-weight: bold;
+     text-decoration: none;*/
+    }
+
+    .code {
+      font-family: monospace;
+      color: #777;
+      white-space: pre-wrap;
+    }
+
+    .code span {
+      padding-left: 32px;
+      text-indent: -32px;
+      display: inline-block;
+    }
+
+    a.attrlink:hover {
+      text-decoration: underline;
+    }
+
+    .gutter-author-p-68304 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-68304 { border-bottom: 2px solid #7991d9; } .gutter-author-p-40913 { border-left: 5px solid #d97979; padding-left: 10px; } .author-p-40913 { border-bottom: 2px solid #d97979; } .gutter-author-p-65547 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-65547 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-66272 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-66272 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-52952 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-52952 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-55125 { border-left: 5px solid #8fffab; padding-left: 10px; } .author-p-55125 { border-bottom: 2px solid #8fffab; } .gutter-author-p-52814 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-52814 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-52366 { border-left: 5px solid #a979d9; padding-left: 10px; } .author-p-52366 { border-bottom: 2px solid #a979d9; } .gutter-author-p-26156 { border-left: 5px solid #a9b5d9; padding-left: 10px; } .author-p-26156 { border-bottom: 2px solid #a9b5d9; } .gutter-author-p-23034 { border-left: 5px solid #d9c179; padding-left: 10px; } .author-p-23034 { border-bottom: 2px solid #d9c179; } .gutter-author-p-31368 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-31368 { border-bottom: 2px solid #d979c1; } .gutter-author-p-24336 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-24336 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-64697 { border-left: 5px solid #ffc7f1; padding-left: 10px; } .author-p-64697 { border-bottom: 2px solid #ffc7f1; } .gutter-author-p-41199 { border-left: 5px solid #d9a9cd; padding-left: 10px; } .author-p-41199 { border-bottom: 2px solid #d9a9cd; } .gutter-author-p-66553 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-66553 { border-bottom: 2px solid #c78fff; } .gutter-author-p-67091 { border-left: 5px solid #c7ffff; padding-left: 10px; } .author-p-67091 { border-bottom: 2px solid #c7ffff; } .gutter-author-p-52222 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-52222 { border-bottom: 2px solid #79d991; } .gutter-author-p-65032 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-65032 { border-bottom: 2px solid #8fffff; } .gutter-author-p-64166 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-64166 { border-bottom: 2px solid #8fffff; } .gutter-author-p-64168 { border-left: 5px solid #d9cda9; padding-left: 10px; } .author-p-64168 { border-bottom: 2px solid #d9cda9; } .gutter-author-p-52821 { border-left: 5px solid #a979d9; padding-left: 10px; } .author-p-52821 { border-bottom: 2px solid #a979d9; } .gutter-author-p-52848 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-52848 { border-bottom: 2px solid #a9d979; } .gutter-author-p-64221 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-64221 { border-bottom: 2px solid #7991d9; } .gutter-author-p-64224 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-64224 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-62049 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-62049 { border-bottom: 2px solid #a9d979; } .gutter-author-p-54368 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-54368 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-65413 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-65413 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-66228 { border-left: 5px solid #d97979; padding-left: 10px; } .author-p-66228 { border-bottom: 2px solid #d97979; } .gutter-author-p-58493 { border-left: 5px solid #c7ffff; padding-left: 10px; } .author-p-58493 { border-bottom: 2px solid #c7ffff; } .gutter-author-p-55897 { border-left: 5px solid #ffc7f1; padding-left: 10px; } .author-p-55897 { border-bottom: 2px solid #ffc7f1; } .gutter-author-p-62051 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-62051 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-56217 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-56217 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-66438 { border-left: 5px solid #d9c179; padding-left: 10px; } .author-p-66438 { border-bottom: 2px solid #d9c179; } .gutter-author-p-66585 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-66585 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-62580 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-62580 { border-bottom: 2px solid #c78fff; } .gutter-author-p-65297 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-65297 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-53620 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-53620 { border-bottom: 2px solid #7991d9; } .gutter-author-p-66655 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-66655 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-62450 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-62450 { border-bottom: 2px solid #c78fff; } .gutter-author-p-66691 { border-left: 5px solid #d97979; padding-left: 10px; } .author-p-66691 { border-bottom: 2px solid #d97979; } .gutter-author-p-65271 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-65271 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-66837 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-66837 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-66587 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-66587 { border-bottom: 2px solid #7991d9; } .gutter-author-p-66863 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-66863 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-66870 { border-left: 5px solid #8fabff; padding-left: 10px; } .author-p-66870 { border-bottom: 2px solid #8fabff; } .gutter-author-p-65355 { border-left: 5px solid #c7ff8f; padding-left: 10px; } .author-p-65355 { border-bottom: 2px solid #c7ff8f; } .gutter-author-p-67103 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-67103 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-66324 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-66324 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-66874 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-66874 { border-bottom: 2px solid #c78fff; } .gutter-author-p-66220 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-66220 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-66881 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-66881 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-52402 { border-left: 5px solid #8fabff; padding-left: 10px; } .author-p-52402 { border-bottom: 2px solid #8fabff; } .gutter-author-p-55944 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-55944 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-66218 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-66218 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-56129 { border-left: 5px solid #c7d5ff; padding-left: 10px; } .author-p-56129 { border-bottom: 2px solid #c7d5ff; } .gutter-author-p-66030 { border-left: 5px solid #a9b5d9; padding-left: 10px; } .author-p-66030 { border-bottom: 2px solid #a9b5d9; } .gutter-author-p-66892 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-66892 { border-bottom: 2px solid #8fffff; } .gutter-author-p-55070 { border-left: 5px solid #d9a9cd; padding-left: 10px; } .author-p-55070 { border-bottom: 2px solid #d9a9cd; } .gutter-author-p-56163 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-56163 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-66957 { border-left: 5px solid #d9a9cd; padding-left: 10px; } .author-p-66957 { border-bottom: 2px solid #d9a9cd; } .gutter-author-p-66959 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-66959 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-66966 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-66966 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-66981 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-66981 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-66988 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-66988 { border-bottom: 2px solid #79d991; } .gutter-author-p-56230 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-56230 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-66995 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-66995 { border-bottom: 2px solid #79d991; } .gutter-author-p-66997 { border-left: 5px solid #ff8fe3; padding-left: 10px; } .author-p-66997 { border-bottom: 2px solid #ff8fe3; } .gutter-author-p-52653 { border-left: 5px solid #ffc7f1; padding-left: 10px; } .author-p-52653 { border-bottom: 2px solid #ffc7f1; } .gutter-author-p-66571 { border-left: 5px solid #ff8f8f; padding-left: 10px; } .author-p-66571 { border-bottom: 2px solid #ff8f8f; } .gutter-author-p-24273 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-24273 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-24534 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-24534 { border-bottom: 2px solid #d979c1; } .gutter-author-p-32222 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-32222 { border-bottom: 2px solid #c78fff; } .gutter-author-p-67107 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-67107 { border-bottom: 2px solid #79d991; } .gutter-author-p-65488 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-65488 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-66357 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-66357 { border-bottom: 2px solid #c78fff; } .gutter-author-p-66293 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-66293 { border-bottom: 2px solid #fff1c7; } 
+  </style>
+
+</head>
+
+<!-- todo: author colors, sidebar, embedly -->
+
+<body>
+<div id="innerdocbody">
+  <div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913 b"><b>g0v.tw hackath4n - 台灣零時政府第肆次國民大會黑客松</b></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547 b"><b>本活動已結束</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">有新人不知往哪去的話這裡有</span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0vMOE/" title="http://hack.g0v.tw/g0vMOE/">教育部傳送門</a></span><span class="author-p-65547"> ，左邊會出現一個分頁，可以先由「g0v newbie相關資料」開始看起，慢慢的就可以參與囉！</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-hone1"><li><span class="author-p-65547 b"><b>b</b></span><span class="author-p-40913 b"><b>r</b></span><span class="author-p-65547 b"><b>oardcast 即時資訊</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:13:02 macpaul_: Dear all, 早上的錄影已經全部上傳到 youtube</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:13:23 macpaul_: url list 在 報告登記的 spreadsheet</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:13:40 macpaul_: 請文化部接手一下</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:13:51 macpaul_: 然後如果各project有 slides的</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:14:06 macpaul_: 也請update 一下 url 到 </span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0v-hackath4n/0Ak0j8_vTJFGUdHZNSTE4QkhfUkp6WjVuS3JaZGZEWVE" title="http://hack.g0v.tw/g0v-hackath4n/0Ak0j8_vTJFGUdHZNSTE4QkhfUkp6WjVuS3JaZGZEWVE">專案介紹/報告登記</a></span><span class="author-p-65547">&nbsp;</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:14:09 macpaul_: 謝謝～～&nbsp;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66272 emptyGutter"><span class="author-p-66272">專案開案報告 </span><span class="author-p-66272 attrlink url"><a class="attrlink" href="http://www.youtube.com/playlist?list=PLJYQbDzKBkcKpcoQqckwKf5RMvCJ5JXtK" title="http://www.youtube.com/playlist?list=PLJYQbDzKBkcKpcoQqckwKf5RMvCJ5JXtK">hackath4n youtube playlist - 專案開案報告</a></span></div>
+<div class="ace-line gutter-author-p-66272 emptyGutter"><span class="author-p-66272">閉幕專案進度報告 </span><span class="author-p-66272 attrlink url"><a class="attrlink" href="http://www.youtube.com/watch?v=E8hjsLIBliA&amp;list=PLJYQbDzKBkcItv5FIYdQkf5Xko6rCbDA9" title="http://www.youtube.com/watch?v=E8hjsLIBliA&amp;list=PLJYQbDzKBkcItv5FIYdQkf5Xko6rCbDA9">hackath4n youtbe playlist - demo</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">14:49 </span><span class="author-p-65547 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/g0v-q0KbGyfswfK" title="https://g0v.hackpad.com/g0v-q0KbGyfswfK">圖說g0v</a></span><span class="author-p-65547"> 初版彩圖完成</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">16:35:21 clkao: 要準備登記報告摟</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">project report, 以下有坑請自行跳入(?</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">64885公益律師呼叫系統：googleForum 邀請參與</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment2"><li><span class="author-p-65547">請補上連結</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">萌典：需CSS達人協助字型/版面</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">Roadpin：外縣市路平資料(github?)需轉成json</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">新聞小幫手：多多回報錯誤(?</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">雨量內插plotting: none</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">eMovements：none</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">政誌：缺 design, 文字編輯,</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">服貿：none</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">立院看門狗：programmer(node.js), writer,&nbsp; ?, 法律系學妹</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">寵物需要我：python programmer, connect to fb program,&nbsp;</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547">零時通關：need 心得文(?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">話說借出去的兩條延長線少拿一條回來0rz...請有拿到好像不是自己的三孔延長線的人士跟我連絡QAQ</span></li></ul></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-comment1"><li><span class="author-p-52952">可能在我們這，明天檢查一下跟你說。</span><span class="author-p-65547"> ipa++</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-hone1"><li><span class="author-p-40913 b"><b>資訊</b></span><span class="author-p-52952 b"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913 b"><b>時間</b></span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-55125">&nbsp;</span><span class="author-p-40913">2013-08-10(六) 09:00 - 18:00</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55125 emptyGutter"><span class="author-p-55125 b"><b>地點</b></span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913">0. The Internet</span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913">1. 台北: 中研院資訊所 </span><span class="author-p-52814 attrlink url"><a class="attrlink" href="http://registrano.com/events/g0v-hackath4n-taipei" title="http://registrano.com/events/g0v-hackath4n-taipei">報名</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952 b"><b>聯繫溝通</b></span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913">線上文件： </span><span class="author-p-40913 attrlink url u url"><a class="attrlink" href="http://hack.g0v.tw/#/g0v-hackath4n" title="http://hack.g0v.tw/#/g0v-hackath4n"><u>http://hack.g0v.tw/#/g0v-hackath4n</u></a></span></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952">fb 社團：</span><span class="author-p-52952 attrlink url url"><a class="attrlink" href="https://www.facebook.com/groups/g0v.general/" title="https://www.facebook.com/groups/g0v.general/">https://www.facebook.com/groups/g0v.general/</a></span></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952">google論壇：</span><span class="author-p-52952 url"><a href="https://groups.google.com/forum/#!forum/g0v-general" title="https://groups.google.com/forum/#!forum/g0v-general">https://groups.google.com/forum/#!forum/g0v-general</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952 b"><b>給新參者</b></span></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><span class="author-p-40913">黑客松新手：</span><span class="author-p-52952">【</span><span class="author-p-52366 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/...--ciS8hEGw7iu" title="https://g0v.hackpad.com/...--ciS8hEGw7iu">我是... 如何參與黑客松</a></span><span class="author-p-52952">】、【</span><span class="author-p-52366 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/-g0v--Q185NMLUdIf" title="https://g0v.hackpad.com/-g0v--Q185NMLUdIf">四個步驟加入 g0v 黑客松</a></span><span class="author-p-52952">】</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-26156 emptyGutter"><span class="author-p-26156 b"><b>餐點</b></span></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952">台北場：</span><span class="author-p-52952 u"><u>歡迎自行準備環保餐具（杯子、餐具、餐盒），減少免洗餐具用量。感謝！</u></span></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-comment1"><li><span class="author-p-23034 i"><i>（</i></span><span class="author-p-31368 i"><i>請</i></span><span class="author-p-23034 i"><i>簽名，不然沒得吃喔! :P）</i></span><span class="author-p-24336 b i"><b><i>(</i></b></span><span class="author-p-24336 b i u"><b><i><u>簽完餐點也要去簽主題喔</u></i></b></span><span class="author-p-24336 b i"><b><i>！）</i></b></span></li></ul></div>
+<div class="ace-line gutter-author-p-64697 emptyGutter"><ul class="list-indent1"><li><span class="author-p-23034">素食：</span><span class="author-p-64697"> 淑芬</span><span class="author-p-66272">, Weinn</span><span class="author-p-41199">, au</span><span class="author-p-66553">,包子</span><span class="author-p-64697">, yglin, jinkuen</span><span class="author-p-67091">, ypcat</span></li></ul></div>
+<div class="ace-line gutter-author-p-52814 emptyGutter"><ul class="list-indent1"><li><span class="author-p-40913">葷</span><span class="author-p-23034">食：</span><span class="author-p-52222">ttcat,&nbsp;</span><span class="author-p-65032"> </span><span class="author-p-64166">ballII, </span><span class="author-p-64168">Noah</span><span class="author-p-40913">, clkao</span><span class="author-p-52821">,</span><span class="author-p-52848"> </span><span class="author-p-52821">Brecht</span><span class="author-p-52848">, </span><span class="author-p-52848 attrlink url internal"><a class="attrlink" href="/ep/profile/mtCZrYeNbzK" title="/ep/profile/mtCZrYeNbzK">FourDollars</a></span><span class="author-p-64221">, </span><span class="author-p-64221 attrlink url internal"><a class="attrlink" href="/ep/profile/xx8bBPjoCil" title="/ep/profile/xx8bBPjoCil">yllan</a></span><span class="author-p-64224">, tuiry</span><span class="author-p-62049">, walkingice</span><span class="author-p-54368">, </span><span class="author-p-54368 attrlink url internal"><a class="attrlink" href="/0UIiRiqtA8v" title="/0UIiRiqtA8v">nchild</a></span><span class="author-p-52814">, </span><span class="author-p-52814 attrlink url internal"><a class="attrlink" href="/ep/profile/xrtzMsDnl24" title="/ep/profile/xrtzMsDnl24">Hsin-chan Chien</a></span><span class="author-p-65413">, </span><span class="author-p-65413 attrlink url internal"><a class="attrlink" href="/ep/profile/rmSAYEsLhUd" title="/ep/profile/rmSAYEsLhUd">Muyueh Lee</a></span><span class="author-p-66228">, 偉尼基,</span><span class="author-p-52366"> ETBlue, </span><span class="author-p-66272">macpaul, lxyang</span><span class="author-p-58493">, yhsiang</span><span class="author-p-55897">, </span><span class="author-p-55897 attrlink url internal"><a class="attrlink" href="/ep/profile/oGf5HRRuJSf" title="/ep/profile/oGf5HRRuJSf">Pomin Wu</a></span><span class="author-p-62051">, </span><span class="author-p-62051 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/ep/profile/v6ozRKwVLwr" title="https://g0v.hackpad.com/ep/profile/v6ozRKwVLwr">Lee</a></span><span class="author-p-56217"> </span><span class="author-p-56217 attrlink url internal"><a class="attrlink" href="/ep/profile/ts7NMxu4sVC" title="/ep/profile/ts7NMxu4sVC">Mindos Cheng</a></span><span class="author-p-66438">, feng</span><span class="author-p-52952">, ipa</span><span class="author-p-66585">, isacl</span><span class="author-p-62580">, hcchien</span><span class="author-p-65297"> </span><span class="author-p-65297 attrlink url internal"><a class="attrlink" href="/ep/profile/ENS06ylFWb8" title="/ep/profile/ENS06ylFWb8">TYLo</a></span><span class="author-p-65547">, </span><span class="author-p-65547 attrlink url internal"><a class="attrlink" href="/ep/profile/FhF2TCnIycW" title="/ep/profile/FhF2TCnIycW">lanfon72</a></span><span class="author-p-65547">, </span><span class="author-p-53620 attrlink url internal"><a class="attrlink" href="/ep/profile/D76XDAsc0aY" title="/ep/profile/D76XDAsc0aY">ZOE</a></span><span class="author-p-53620">, </span><span class="author-p-53620 attrlink url internal"><a class="attrlink" href="/ep/profile/EbmEClnCw6Z" title="/ep/profile/EbmEClnCw6Z">Willy Kuo</a></span><span class="author-p-66655">, </span><span class="author-p-66655 attrlink url internal"><a class="attrlink" href="/ep/profile/xrSLRdDkACP" title="/ep/profile/xrSLRdDkACP">Terces Tsai</a></span><span class="author-p-62450"> , jimmy</span><span class="author-p-66691">,ernestcc</span><span class="author-p-65271">, </span><span class="author-p-65271 attrlink url internal"><a class="attrlink" href="/ep/profile/qt2Wl3BeJ4r" title="/ep/profile/qt2Wl3BeJ4r">Patrick Wang</a></span><span class="author-p-66837 attrlink url internal"><a class="attrlink" href="/ep/profile/qt2Wl3BeJ4r" title="/ep/profile/qt2Wl3BeJ4r"> @婁默默</a></span><span class="author-p-66587">, </span><span class="author-p-66587 attrlink url internal"><a class="attrlink" href="/ep/profile/tk0PXGB1mIp" title="/ep/profile/tk0PXGB1mIp">Jacob Chen</a></span><span class="author-p-66863">, </span><span class="author-p-66863 attrlink url internal"><a class="attrlink" href="/ep/profile/thCnZv8r9eY" title="/ep/profile/thCnZv8r9eY">Kirsten Liu</a></span><span class="author-p-66870"> </span><span class="author-p-65355 attrlink url internal"><a class="attrlink" href="/ep/profile/tC7Bqff8Vp0" title="/ep/profile/tC7Bqff8Vp0">Ronny </a></span><span class="author-p-67103 attrlink url internal"><a class="attrlink" href="/ep/profile/tC7Bqff8Vp0" title="/ep/profile/tC7Bqff8Vp0">,</a></span><span class="author-p-67103">Wahaho, </span><span class="author-p-65355 attrlink url internal"><a class="attrlink" href="/ep/profile/tC7Bqff8Vp0" title="/ep/profile/tC7Bqff8Vp0">Wang</a></span><span class="author-p-66324">,czchen</span><span class="author-p-66874">,yyhuang</span><span class="author-p-66220">,Fion</span><span class="author-p-66881">,ZheAnLin</span><span class="author-p-52402">,jftsai</span><span class="author-p-55944">,jslee</span><span class="author-p-66218">,chuiyi</span><span class="author-p-56129">,長鋼</span><span class="author-p-64697">,</span><span class="author-p-66030"> </span><span class="author-p-66030 attrlink url internal"><a class="attrlink" href="/ep/profile/sPJlTOYd4mb" title="/ep/profile/sPJlTOYd4mb">Wonder Chan</a></span><span class="author-p-66892"> </span><span class="author-p-66892 attrlink url internal"><a class="attrlink" href="/ep/profile/EpzFgKw1Qcd" title="/ep/profile/EpzFgKw1Qcd">Fumi Miyabe</a></span><span class="author-p-55070 attrlink url internal"><a class="attrlink" href="/ep/profile/EpzFgKw1Qcd" title="/ep/profile/EpzFgKw1Qcd">, howardsun</a></span><span class="author-p-56163">,高小兔</span><span class="author-p-66957">,KentHuang</span><span class="author-p-66959">,jab Chiao</span><span class="author-p-66966">,Peggy</span><span class="author-p-66981">,MnO2</span><span class="author-p-66988">,miaout17,Cate</span></li></ul></div>
+<div class="ace-line gutter-author-p-56230 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66995">fengyi chang</span><span class="author-p-66997">, Hsin-Hsiang Huang</span><span class="author-p-52653">, kcwu</span><span class="author-p-66571">,</span><span class="author-p-66997"> </span><span class="author-p-66571 attrlink url internal"><a class="attrlink" href="/ep/profile/Aja885UU6Xt" title="/ep/profile/Aja885UU6Xt">dannvix</a></span><span class="author-p-56230">, Richard (legist 旅強),&nbsp;</span></li></ul></div>
+<div class="ace-line gutter-author-p-66959 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-55070 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913">1. 沒有既定議程，預計像是</span><span class="author-p-40913 attrlink url"><a class="attrlink" href="http://en.wikipedia.org/wiki/BarCamp" title="http://en.wikipedia.org/wiki/BarCamp"> </a></span><span class="author-p-40913">barcamp / unconference 形式, 不論當天是否參加，都歡迎編輯這份文件！請看看「需要幫忙」下，若有可以協助的地方，請簽名。</span></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-40913">2&nbsp; </span><span class="author-p-52952">活動當天，請在報到處先在衣服上貼實體tag「</span><span class="author-p-52952 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/-tag-6rlOq2DO1cD" title="https://g0v.hackpad.com/-tag-6rlOq2DO1cD">關鍵字貼紙</a></span><span class="author-p-52952">」，專案介紹後會並行介紹媒合</span><span class="author-p-40913">，</span><span class="author-p-40913 b"><b>然後</b></span><span class="author-p-52952 b"><b>確定成案的專案找好角落架好專案立牌，讓大家找到專案主，</b></span><span class="author-p-40913 b"><b>開始hack!</b></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-hone1"><li><span class="author-p-52952 b"><b>注意事項</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913 b"><b>活動前</b></span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-52952">簽到：</span><span class="author-p-40913">請到</span><span class="author-p-52952 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/people" title="http://hack.g0v.tw/people">HUB（簽到處）</a></span><span class="author-p-40913">登入，並且加上自己的關鍵字，這樣其他人才知道什麼問題可以找你！記得加上 &#34;hackath4n&#34; 表示要參加本次活動。</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-52952">專案：</span><span class="author-p-40913 u"><u>想看到什麼事情發生？</u></span><span class="author-p-52952 u"><u>到【專案構想】頁</u></span><span class="author-p-40913 u"><u>你有興趣的主題下面簽名，然後開始討論吧！</u></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034 b"><b>活動當天</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">台北場：</span></div>
+<div class="ace-line gutter-author-p-24534 emptyGutter"><span class="author-p-23034">交通：</span><span class="author-p-24534 attrlink url"><a class="attrlink" href="http://www.citi.sinica.edu.tw/images/page_used/acadimia-sinica_2011.jpg" title="http://www.citi.sinica.edu.tw/images/page_used/acadimia-sinica_2011.jpg">院區地圖</a></span></div>
+<div class="ace-line gutter-author-p-32222 emptyGutter"><span class="author-p-32222 attrimg img"><img class="inline-img" src="https://dchtm6r471mui.cloudfront.net/hackpad.com_lIoCjaeMWzC_p.32222_1358912162712_g0v.png" faketext="*" contenteditable="false"></span></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034">停車：院區假日可免費停車。訪客沒有限定停車區域，白色格子都可以停</span></div>
+<div class="ace-line gutter-author-p-24534 emptyGutter"><span class="author-p-23034">&nbsp;</span><span class="author-p-24534">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 資</span><span class="author-p-26156">訊所</span><span class="author-p-24534">在Building </span><span class="author-p-26156">32</span><span class="author-p-24534">，公車站牌在Building 16，下車後穿過萊爾富進到院區</span></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-24534 b"><b>板南線</b></span><span class="author-p-24534">：</span><span class="author-p-23034">南港捷運站二號出口</span><span class="author-p-24534">，</span><span class="author-p-23034">轉乘藍25、212</span><span class="author-p-24534">(直行)</span><span class="author-p-23034">、270公車</span><span class="author-p-24534">，中研院站下車</span></li></ol></div>
+<div class="ace-line gutter-author-p-24534 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-24534 b"><b>板南線、文湖線</b></span><span class="author-p-24534">：南港展覽館站五號出口，上天橋跨過研究院路，轉乘205、212、276、306、620、645、679、小1、小12，中研院站下車</span></li></ol></div>
+<div class="ace-line gutter-author-p-24534 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-24534 b"><b>板南線、文湖線</b></span><span class="author-p-24534">：南港展覽館站五號出口，租借Youbike，直接騎到中研院</span></li></ol></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24534 emptyGutter"><span class="author-p-23034">計程車共乘</span><span class="author-p-24534">有兩處 1.南港站二號出口 2. 南港展覽館站五號與六號出口之間</span><span class="author-p-23034">（請自行</span><span class="author-p-26156">糾團</span><span class="author-p-23034">）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-23034 b"><b>需要幫忙</b></span><span class="author-p-52952 b"><b>（請簽名）</b></span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-task1"><li><span class="author-p-40913">Hangout </span><span class="author-p-23034">線上轉播</span><span class="author-p-52952">（</span><span class="author-p-23034">開場介紹、</span><span class="author-p-52952">成果發表）：</span></li></ul></div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><ul class="list-taskdone2"><li><span class="author-p-67107">開場介紹:</span></li></ul></div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><span class="author-p-67107 attrembed embed">*</span></div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><span class="author-p-67107 url"><a href="http://youtu.be/mBSz3gj-k5U" title="http://youtu.be/mBSz3gj-k5U">http://youtu.be/mBSz3gj-k5U</a></span></div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-67107">成果發表: </span><span class="author-p-67107 url"><a href="http://www.youtube.com/embed/raBAg8Dlk8w" title="http://www.youtube.com/embed/raBAg8Dlk8w">http://www.youtube.com/embed/raBAg8Dlk8w</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-24336">名牌、簽字筆</span><span class="author-p-52952"> x 5</span><span class="author-p-24336">（歡迎自己帶舊名牌來戴</span><span class="author-p-52952">）：</span><span class="author-p-24336"> </span><span class="author-p-66228">偉尼基</span><span class="author-p-66837"> 婁默默</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-52952 attrlink url"><a class="attrlink" href="http://www.sfuu.com.tw/images/productimages/sf000/sf017.jpg" title="http://www.sfuu.com.tw/images/productimages/sf000/sf017.jpg">專案立牌架</a></span><span class="author-p-52952"> x 12</span><span class="author-p-40913"> ：政大支援</span></li></ul></div>
+<div class="ace-line gutter-author-p-62049 emptyGutter"><ul class="list-task1"><li><span class="author-p-23034">多孔延長線約需</span><span class="author-p-52952">15</span><span class="author-p-23034">條，開放認領</span><span class="author-p-52952">：</span><span class="author-p-23034">@clkao x</span><span class="author-p-66228"> </span><span class="author-p-23034">5</span><span class="author-p-64168">,</span><span class="author-p-65547"> </span><span class="author-p-65547 attrlink url internal"><a class="attrlink" href="/ep/profile/FhF2TCnIycW" title="/ep/profile/FhF2TCnIycW">lanfon72</a></span><span class="author-p-65547"> x 2</span><span class="author-p-66228">, 偉尼基x 1</span><span class="author-p-58493">, yhsiang x 1</span><span class="author-p-55070">, howardsun x1</span><span class="author-p-62049">, walkingice x1</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-task1"><li><span class="author-p-24273">攝影</span><span class="author-p-52952">：</span></li></ul></div>
+<div class="ace-line gutter-author-p-65488 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-52952">錄影：</span><span class="author-p-65488">盧易詩(info@indiemedia.tw)</span></li></ul></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-comment2"><li><span class="author-p-52952">ipa這次無法錄影</span></li></ul></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-task1"><li><span class="author-p-52952">文字紀錄（會後撰文報導有興趣的專案）：</span><span class="author-p-56163">高小兔</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-task1"><li><span class="author-p-40913">按鈴人(專案報告及成果報告)：</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-task2"><li><span class="author-p-40913">計時軟體</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-task1"><li><span class="author-p-40913">約下午四點時，到各組看看有沒有要參加成果報告，協助登記：</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-26156 emptyGutter"><span class="author-p-26156 b"><b>流</b></span><span class="author-p-24336 b"><b>程</b></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-40913">領取技能貼紙，貼在肩膀上</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-40913">專案介紹每組三分鐘，兩分鐘時鈴響提醒</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-40913">長期專案直接說明會在哪個角落，需要什麼人</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-40913">個人介紹</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-40913">已經有上台專案介紹過的人跳過</span></li></ul></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-40913">大風吹：developer 到一個群，每個人麥克風接力說自己是誰、designer 到一群、其他到一群</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034">可以自由加上十分鐘 mini-talk (地點、時間)</span><span class="author-p-40913"> (14:00 後)</span></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="                         author-p-23034 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><span class="author-p-67107">早上的錄影, 品質遠超過 google hangout 的轉播 by </span><span class="author-p-67107 attrlink url internal"><a class="attrlink" href="/ep/profile/p6bPUpX1BFk" title="/ep/profile/p6bPUpX1BFk">Macpaul Lin</a></span></div>
+<div class="ace-line gutter-author-p-66272 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-66272">專案開案報告 </span><span class="author-p-66272 attrlink url"><a class="attrlink" href="http://www.youtube.com/playlist?list=PLJYQbDzKBkcKpcoQqckwKf5RMvCJ5JXtK" title="http://www.youtube.com/playlist?list=PLJYQbDzKBkcKpcoQqckwKf5RMvCJ5JXtK">hackath4n youtube playlist - 專案開案報告</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-66272 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-66272">閉幕專案進度報告 </span><span class="author-p-66272 attrlink url"><a class="attrlink" href="http://www.youtube.com/watch?v=E8hjsLIBliA&amp;list=PLJYQbDzKBkcItv5FIYdQkf5Xko6rCbDA9" title="http://www.youtube.com/watch?v=E8hjsLIBliA&amp;list=PLJYQbDzKBkcItv5FIYdQkf5Xko6rCbDA9">hackath4n youtbe playlist - demo</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-67107">g0v.tw hackath4n - 台灣零時政府第肆次國民大會黑客松 - 新手村 opening </span><span class="author-p-67107 url"><a href="http://youtu.be/H6ca5OOSpEs" title="http://youtu.be/H6ca5OOSpEs">http://youtu.be/H6ca5OOSpEs</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-67107 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-67107">其他計畫介紹請見, J column of </span><span class="author-p-67107 url"><a href="http://hack.g0v.tw/g0v-hackath4n/0Ak0j8_vTJFGUdHZNSTE4QkhfUkp6WjVuS3JaZGZEWVE" title="http://hack.g0v.tw/g0v-hackath4n/0Ak0j8_vTJFGUdHZNSTE4QkhfUkp6WjVuS3JaZGZEWVE">http://hack.g0v.tw/g0v-hackath4n/0Ak0j8_vTJFGUdHZNSTE4QkhfUkp6WjVuS3JaZGZEWVE</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><span class="author-p-23034">=================</span><span class="author-p-24336">=======================================</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66293 emptyGutter"><span class="author-p-66293">This ad is supporting your extension SmoothScroll. Turn off these ads?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+
+</div>
+
+<script type='text/javascript'>
+  function goLive() {
+    if (navigator.onLine) {
+      document.location = 'https://g0v.hackpad.com/YCcLbMb8heG#g0v.tw%20hackath4n%20-%20%E5%8F%B0%E7%81%A3%E9%9B%B6%E6%99%82%E6%94%BF%E5%BA%9C%E7%AC%AC%E8%82%86%E6%AC%A1%E5%9C%8B%E6%B0%91%E5%A4%A7%E6%9C%83%E9%BB%91%E5%AE%A2%E6%9D%BE';
+    } else {
+      setTimeout(goLive, 250);
+    }
+  }
+  goLive();
+</script>
+
+</body>
+</html>
+ 

@@ -1,0 +1,334 @@
+<html>
+<head>
+  <script type="text/javascript">
+  // <![CDATA[
+  var clientVars = { collab_client_vars: '' };
+  // ]]>
+  </script>
+  <style type="text/css">
+    body { background: #F0F0F0; }
+    #innerdocbody {
+      width: 590px;
+      margin: auto;
+      margin-top: 60px;
+      color: #333;
+      background-color: #fff;
+      font-size: 13px;
+      line-height: 17px;
+      font-family: 'Helvetica Neue';
+      border: 1px solid #CCC;
+
+      padding-top: 1px; /* important for some reason? */
+      padding-right: 10px;
+      padding-bottom: 8px;
+      padding-left: 0px /* prevents characters from looking chopped off in FF3 */;
+      overflow: hidden;
+      /* blank 1x1 gif, so that IE8 doesn't consider the body transparent */
+      background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+    }
+
+    #innerdocbody > div:first-child span {
+      font-size: 140%;
+      font-weight: bold;
+    }
+    #innerdocbody > div:first-child{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .gutter-noauthor {
+      padding-left: 15px;
+    }
+
+    .inline-img {
+      max-width:400px;
+      max-height:300px;
+      width: expression(this.width > 400 ? 400: true);
+      height: expression(this.height > 300 ? 300: true);
+    }
+
+    .inline-tex{
+      border: 1px solid transparent;
+    }
+
+    .inline-tex:hover {
+      border: 1px dashed red;
+    }
+
+    a.attrlink {
+      /*  font-weight: bold;
+     text-decoration: none;*/
+    }
+
+    .code {
+      font-family: monospace;
+      color: #777;
+      white-space: pre-wrap;
+    }
+
+    .code span {
+      padding-left: 32px;
+      text-indent: -32px;
+      display: inline-block;
+    }
+
+    a.attrlink:hover {
+      text-decoration: underline;
+    }
+
+    .gutter-author-p-23034 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-23034 { border-bottom: 2px solid #79d991; } .gutter-author-p-24336 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-24336 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-52366 { border-left: 5px solid #8fffab; padding-left: 10px; } .author-p-52366 { border-bottom: 2px solid #8fffab; } .gutter-author-p-65547 { border-left: 5px solid #c1d9a9; padding-left: 10px; } .author-p-65547 { border-bottom: 2px solid #c1d9a9; } .gutter-author-p-52952 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-52952 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-24273 { border-left: 5px solid #ffc7f1; padding-left: 10px; } .author-p-24273 { border-bottom: 2px solid #ffc7f1; } .gutter-author-p-66126 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-66126 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-24377 { border-left: 5px solid #c7ffff; padding-left: 10px; } .author-p-24377 { border-bottom: 2px solid #c7ffff; } .gutter-author-p-27566 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-27566 { border-bottom: 2px solid #d979c1; } .gutter-author-p-65660 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-65660 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-66357 { border-left: 5px solid #ffc7f1; padding-left: 10px; } .author-p-66357 { border-bottom: 2px solid #ffc7f1; } .gutter-author-p-24352 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-24352 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-26156 { border-left: 5px solid #d9cda9; padding-left: 10px; } .author-p-26156 { border-bottom: 2px solid #d9cda9; } .gutter-author-p-24602 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-24602 { border-bottom: 2px solid #a9d979; } .gutter-author-p-28015 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-28015 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-25578 { border-left: 5px solid #c1d9a9; padding-left: 10px; } .author-p-25578 { border-bottom: 2px solid #c1d9a9; } .gutter-author-p-65732 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-65732 { border-bottom: 2px solid #8fffff; } .gutter-author-p-24557 { border-left: 5px solid #c7ff8f; padding-left: 10px; } .author-p-24557 { border-bottom: 2px solid #c7ff8f; } .gutter-author-p-24499 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-24499 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-40431 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-40431 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-56163 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-56163 { border-bottom: 2px solid #7991d9; } .gutter-author-p-64071 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-64071 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-66657 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-66657 { border-bottom: 2px solid #c78fff; } .gutter-author-p-25437 { border-left: 5px solid #d9a9cd; padding-left: 10px; } .author-p-25437 { border-bottom: 2px solid #d9a9cd; } .gutter-author-p-65594 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-65594 { border-bottom: 2px solid #8fffff; } .gutter-author-p-56105 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-56105 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-52653 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-52653 { border-bottom: 2px solid #d979c1; } .gutter-author-p-56230 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-56230 { border-bottom: 2px solid #7991d9; } .gutter-author-p-66281 { border-left: 5px solid #d97979; padding-left: 10px; } .author-p-66281 { border-bottom: 2px solid #d97979; } .gutter-author-p-66228 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-66228 { border-bottom: 2px solid #79d991; } .gutter-author-p-66222 { border-left: 5px solid #c7d5ff; padding-left: 10px; } .author-p-66222 { border-bottom: 2px solid #c7d5ff; } .gutter-author-p-66595 { border-left: 5px solid #ff8fe3; padding-left: 10px; } .author-p-66595 { border-bottom: 2px solid #ff8fe3; } .gutter-author-p-66269 { border-left: 5px solid #ff8f8f; padding-left: 10px; } .author-p-66269 { border-bottom: 2px solid #ff8f8f; } .gutter-author-p-65980 { border-left: 5px solid #ff8fe3; padding-left: 10px; } .author-p-65980 { border-bottom: 2px solid #ff8fe3; } .gutter-author-p-66024 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-66024 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-68546 { border-left: 5px solid #ffe38f; padding-left: 10px; } .author-p-68546 { border-bottom: 2px solid #ffe38f; } .gutter-author-p-65802 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-65802 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-57015 { border-left: 5px solid #ffe38f; padding-left: 10px; } .author-p-57015 { border-bottom: 2px solid #ffe38f; } .gutter-author-p-67171 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-67171 { border-bottom: 2px solid #79d991; } 
+  </style>
+
+</head>
+
+<!-- todo: author colors, sidebar, embedly -->
+
+<body>
+<div id="innerdocbody">
+  <div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034">我是... 如何</span><span class="author-p-24336">參與黑客松</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><span class="author-p-24336">有人有想法，有人有技術，有人有執行力，有人有熱血，要如何開始把點子化為計畫，用open source的精神和方法把專案滾出雪球來呢？</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-24336 b"><b>㊣ 請先參考</b></span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0vMOE/Q185NMLUdIf" title="http://hack.g0v.tw/g0vMOE/Q185NMLUdIf">四個步驟加入 g0v 黑客松</a></span><span class="author-p-24336 b"><b>。</b></span></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952 b"><b>㊣ 或首頁之</b></span><span class="author-p-52952 attrlink url"><a class="attrlink" href="http://g0v.tw/join.html" title="http://g0v.tw/join.html">參與我們</a></span><span class="author-p-52952">。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-hone1"><li><span class="author-p-24273 b"><b>形形色色的 g0v 成員</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><span class="author-p-23034 b"><b>我是議題關注者</b></span><span class="author-p-24336 b"><b>（NGO, NPO, 獨立評論, 公民記者）</b></span></div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-23034">告訴大家</span><span class="author-p-24336">想運用什麼樣的資料揭露你關心</span><span class="author-p-23034">的問題</span><span class="author-p-24336">、</span><span class="author-p-23034">希望用什麼樣的資訊</span><span class="author-p-52952">呈現 (試著用 wireframe 工具畫出草稿, 或者任何熟悉的繪圖軟體)</span></li></ul></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-23034">hlb 推薦: </span><span class="author-p-23034 attrlink url url"><a class="attrlink" href="http://wireframe.cc/" title="http://wireframe.cc/">http://wireframe.cc/</a></span><span class="author-p-23034">, </span><span class="author-p-23034 attrlink url url"><a class="attrlink" href="https://moqups.com/" title="https://moqups.com/">https://moqups.com/</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-23034">原始資料在哪裡可以取得，內容大概包含什麼資料，哪些資料</span><span class="author-p-66126"> </span><span class="author-p-23034">還找不到，</span><span class="author-p-24336">哪些資料需要釐清其特性或加以解釋，哪些資料</span><span class="author-p-23034">需要手動整理</span></li></ul></div>
+<div class="ace-line gutter-author-p-24377 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-24377">問 data 在哪裡 :&nbsp;</span></li></ul></div>
+<div class="ace-line gutter-author-p-24377 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-24377">申請 data&nbsp;</span></li></ul></div>
+<div class="ace-line gutter-author-p-27566 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-27566">摹擬一般使用者的思維，進行人因工程的修飾回饋、編製使用手冊等，使系統更親和</span></li></ul></div>
+<div class="ace-line gutter-author-p-27566 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-27566">研創簡報(slide), 影片(v</span><span class="author-p-65660">ide</span><span class="author-p-27566">o), 網宣(eDM),...等各式深度推廣用的媒材，讓社群成員拿來和outsider介紹與對話</span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24336">運用成果產出的資料（例：國家預算、國債數據、立委投票結果、路平專案成效等）撰寫深入報導。</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034 b"><b>我是軟體開發人員</b></span></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-23034">學一點點 web 或前端相關技術，譬如用</span><span class="author-p-66357">d3js</span><span class="author-p-23034">&nbsp; 視覺化各種數據</span></li></ul></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-23034">如果你沒有參與過開放源碼的社群，請繼續看下去：</span></li></ul></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-23034">release early, release often: 常常更新最新狀況，讓所有人都能用你寫好的東西，避免重複的工作</span></li></ul></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-23034">盡早把工作項目切小，並找人幫忙</span></li></ul></div>
+<div class="ace-line gutter-author-p-24352 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-24352">認識開源之道 </span><span class="author-p-24352 attrlink url"><a class="attrlink" href="http://www.slideshare.net/autang/open-source-enlightenment" title="http://www.slideshare.net/autang/open-source-enlightenment">簡報</a></span><span class="author-p-24352">, </span><span class="author-p-24352 attrlink url"><a class="attrlink" href="https://gist.github.com/2400315" title="https://gist.github.com/2400315">字稿</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-24352 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-24352 attrlink url"><a class="attrlink" href="http://people.debian.org.tw/~chihchun/2011/07/18/work-with-open-source-project/" title="http://people.debian.org.tw/~chihchun/2011/07/18/work-with-open-source-project/">如何與</a></span><span class="author-p-26156 attrlink url"><a class="attrlink" href="http://people.debian.org.tw/~chihchun/2011/07/18/work-with-open-source-project/" title="http://people.debian.org.tw/~chihchun/2011/07/18/work-with-open-source-project/">開</a></span><span class="author-p-24352 attrlink url"><a class="attrlink" href="http://people.debian.org.tw/~chihchun/2011/07/18/work-with-open-source-project/" title="http://people.debian.org.tw/~chihchun/2011/07/18/work-with-open-source-project/">放源碼社群工作</a></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034 b"><b>我是設計師</b></span></div>
+<div class="ace-line gutter-author-p-24602 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24602">類似設計 CIS 的概念, 客製化 g0v style 的 bootstrap / jqueryUI 等等元件</span></li></ul></div>
+<div class="ace-line gutter-author-p-24602 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24602">提供 project UI/UX&nbsp; / mockup 草稿的改進建議 or 參與製作</span></li></ul></div>
+<div class="ace-line gutter-author-p-28015 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-28015">重新設計使用體驗。釐清使用族群和需要的資料，資料量最簡化&amp;視覺化</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034 b"><b>我是 PM</b></span></div>
+<div class="ace-line gutter-author-p-25578 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-25578">專案管理工具 Trello 或 ScrumDo(開放的board可以讓大家知道目前正在進行哪些工作)</span></li></ul></div>
+<div class="ace-line gutter-author-p-24602 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24602">hackathon 中參與的 project 在日後也可召起小型聚會例如 &#34;g0v Hack Night&#34;, &#34;group meetup&#34; 等等..</span></li></ul></div>
+<div class="ace-line gutter-author-p-24602 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24602">彙整成果給後勤中心或文字工作者</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-27566 emptyGutter"><span class="author-p-24336 b"><b>我是</b></span><span class="author-p-27566 b"><b>文字 and/or </b></span><span class="author-p-24336 b"><b>視覺、</b></span><span class="author-p-27566 b"><b>藝術</b></span><span class="author-p-24336 b"><b>工作者</b></span><span class="author-p-27566 b"><b>：</b></span></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24336">了解現有資源的問題、以及資訊程式能夠解決的問題，撰寫網站文案</span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24336">彙整成果介紹文、撰寫報導、黑客松心得</span></li></ul></div>
+<div class="ace-line gutter-author-p-27566 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-27566">寫部落格</span><span class="author-p-65732">，</span><span class="author-p-27566">媒體新聞稿等初階推廣用的文字 and/or</span><span class="author-p-24336"> 插圖、</span><span class="author-p-27566">藝術品</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><span class="author-p-23034 b"><b>我是鄉民</b></span></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-23034">掛在 irc 上，了解誰在做什麼，有新的人來時可以招呼、銜接人與關聯專案</span></li></ul></div>
+<div class="ace-line gutter-author-p-23034 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-23034">幫忙測試剛做好的功能</span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24336">幫忙搜尋原始資料，整理資料，聯絡相關單位</span></li></ul></div>
+<div class="ace-line gutter-author-p-25578 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-25578">幫忙堆廣活動(ex:Mobile01/PTT(八卦版?),ex:將活動訊息放在簽名檔)</span></li></ul></div>
+<div class="ace-line gutter-author-p-24602 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24602">協助活動主持, 現場採訪/錄音(做成逐字稿提供給文字工作者) 提供延長線、披薩</span></li></ul></div>
+<div class="ace-line gutter-author-p-24557 emptyGutter"><span class="author-p-24557 b"><b>我是特定領域</b></span><span class="author-p-24499 b"><b>專業人士</b></span><span class="author-p-24557 b"><b> (domain specialist)</b></span></div>
+<div class="ace-line gutter-author-p-24499 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24499 i"><i>建議用詞使用專業人士，涵蓋性較廣，因有些特定領域專業人士並未從事該領域工作</i></span></li></ul></div>
+<div class="ace-line gutter-author-p-40431 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24499">是否</span><span class="author-p-40431 i"><i>要登記專業？或是有需求再找</i></span><span class="author-p-24499">？</span></li></ul></div>
+<div class="ace-line gutter-author-p-24557 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24557">例：想分析電力資料，必須找懂能源的專業人士來解盤</span></li></ul></div>
+<div class="ace-line gutter-author-p-24499 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24499">主動關注大家進行的 projects，提供領域知識，提醒應注意事項，如著作權</span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24499">回答領域知識相關問題</span><span class="author-p-24336">（法律、財稅、福利政策、國家預算、電力、國會運作...等等等）</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><span class="author-p-24336">=================================================================</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-24336 b"><b>㊣ 再度參考</b></span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0vMOE/Q185NMLUdIf" title="http://hack.g0v.tw/g0vMOE/Q185NMLUdIf">四個步驟加入 g0v 黑客松</a></span><span class="author-p-24336 b"><b>。</b></span></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><span class="author-p-24336">=================================================================</span></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24336">順便當徵人分隔線</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-hone1"><li><span class="author-p-24273 b"><b>g0v 文化部徵人中</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273 b"><b>職缺一：文史館館長</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">工作執掌（可複選）</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-24273">潛水：掛在 irc 上或隨時盯著 logbot，綜覽全局，掌握最新狀況</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-24273">旁觀：到黑客松活動現場，觀察活動進行的細節以及各專案的進展</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-24273">插手：發現不知所措的新人，把她抓住，告訴她可以去哪裡找誰做什麼</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="4" class="list-number1"><li><span class="author-p-24273">嘴砲：採訪其他人，替黑客松活動或個別專案撰寫報導</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="5" class="list-number1"><li><span class="author-p-24273">直銷：對親朋好友散播相關訊息，推廣 g0v 作品，拉更多下線加入 g0v</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用工具</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">輸入法</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用語言</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">txt</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">對這份工作有疑問嗎？請洽其他已出櫃的館長們：ipa、tkirby、peggy、雨蒼、Brecht</span><span class="author-p-52366">、Grace Wang、</span><span class="author-p-65547">貓橘、</span><span class="author-p-52366">小愉、jbytw、Lee (Jessy)、caasi、venev、</span><span class="author-p-56163">erhfen 小兔</span><span class="author-p-24273">（請填寫）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273 b"><b>職缺二：美術館館長</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">工作執掌（可複選）</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-24273">洩憤：看到重要的社會議題，畫插畫/漫畫把故事說出來</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-24273">私通：和 NPO、NGO、公民團體、社運人士暗通款曲，尋找作畫的靈感</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-24273">亂入：下載其他館長的繪圖工作檔，幫忙改良作品並上傳發佈</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用工具</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">紙筆 / 繪圖軟體</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用語言</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">tif / jpg / png / psd / ai</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">對這份工作有疑問嗎？請洽其他已出櫃的館長們：tuiry</span><span class="author-p-52366">-插畫/平面</span><span class="author-p-24273">、阿賢</span><span class="author-p-52366">-插畫/平面</span><span class="author-p-24273">、Iris</span><span class="author-p-52366">插畫</span><span class="author-p-24273">、</span><span class="author-p-64071">AliceWei</span><span class="author-p-52366">-插畫</span><span class="author-p-24273">、Scott</span><span class="author-p-52366">-插畫</span><span class="author-p-24273">、顧宗訓</span><span class="author-p-52366">-平面</span><span class="author-p-24273">、</span><span class="author-p-52366">Wang LeWei-插畫、jbytw</span><span class="author-p-65732">-美勞</span><span class="author-p-52366">、</span><span class="author-p-24273">ETBlue、（請填寫）</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24273">館長 AliceWei 快上 irc / facebook / google group / people hub 交出你的聯絡方式 XDXD - got it! :D</span></li></ul></div>
+<div class="ace-line gutter-author-p-65732 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65732">我美術慘不忍睹也可以加入嗎XD (美勞是指手作有的沒的道具)</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">工作手冊</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/g0v--2ozguMQjfV5" title="https://g0v.hackpad.com/g0v--2ozguMQjfV5">g0v 美術館館長手冊</a></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273 b"><b>職缺三：設計之都市長</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24273">嗯，為什麼文化部底下會有市長呢？我也不知道 XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">工作執掌（可複選）</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-24273">妄想：看到某個社會問題，心裡想著如何設計別人來解決它</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-24273">腦補：看到某個 g0v 專案亂無章法，訂 strategy、寫 user story、畫流程圖把前置規劃補完</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-24273">暗算：看到某個 g0v 專案卡關難產，畫框線圖讓大家有條明路可以走出來</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="4" class="list-number1"><li><span class="author-p-24273">粉飾：看到某個 g0v 專案其貌不揚，做視覺設計讓它人緣變好</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="5" class="list-number1"><li><span class="author-p-24273">自幹：看到某個 g0v 專案有藍圖卻沒施工，自己跳下去把前端寫好</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="6" class="list-number1"><li><span class="author-p-24273">出國比賽：把作品輸出到其他國家的類 g0v 專案，花費國家預算：0 元</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用工具</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">文書軟體 / 繪圖軟體 / 程式開發軟體</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用語言</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">gdocs / psd / ai / indd / html / css / js</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">對這份工作有疑問嗎？請洽其他已出櫃的市長們：Even Wu、白凜希、hlb、阿修、monjour、黃米奧、阿賢、Roy、Chia-yu、</span><span class="author-p-64071">AliceWei</span><span class="author-p-24273">、Howlin、</span><span class="author-p-52366">pudding、Emily、Super J、gama、</span><span class="author-p-24273">ETBlue、</span><span class="author-p-66657">waiting、</span><span class="author-p-24273">（請填寫）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273 b"><b>助益事項</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">您必須了解：</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">以上職缺一旦應徵，經由您自己批准後立刻生效</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">以上職缺一旦應徵，您將同時擔任文化部部長一職，責無旁貸</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">若您同意以上規定，請在出櫃館長/市長欄填上自己的名號，宣誓就職。</span></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><span class="author-p-52366">就職後，您必須馬上做的事：</span></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">加入 </span><span class="author-p-52366 attrlink url"><a class="attrlink" href="https://groups.google.com/forum/#!forum/g0v-moc" title="https://groups.google.com/forum/#!forum/g0v-moc">g0v 文化部的 google groups</a></span><span class="author-p-52366">，在 google groups 發一篇獨立的自我介紹文，讓大家知道什麼坑可以推你進去</span></li></ul></div>
+<div class="ace-line gutter-author-p-25437 emptyGutter"><ul class="list-comment1"><li><span class="author-p-25437">這樣看起來好像不太容易會有人跳坑XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24336">寫徵工友比較容易？（顯示為工友狀態）XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24273">因為大家都不想當部長嗎？XDXD</span></li></ul></div>
+<div class="ace-line gutter-author-p-65594 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65594">剛開門就發現是部長的缺整整倒退三步(真實心情XD)</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-comment1"><li><span class="author-p-52366">啊... XD 還是寫坑長大家比較能接受，文化坑坑長...文史坑坑長，美術坑坑長，設計之坑坑長，研究坑坑長</span></li></ul></div>
+<div class="ace-line gutter-author-p-65732 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65732">坑長與鍵民互相輝映XD 不過坑長這詞剛來會看不懂</span></li></ul></div>
+<div class="ace-line gutter-author-p-56105 emptyGutter"><ul class="list-comment1"><li><span class="author-p-56105">叫鍵掌/長如何？ # 什麼都要長</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">但沒薪水也沒得漲XDDDD</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-hone1"><li><span class="author-p-24273 b"><b>g0v 研究院徵人中</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273 b"><b>職缺：各所所長</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">工作執掌（可複選）</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-24273">挖坑：發掘屬於本所領域的問題，提出專案構想，等路過的阿宅跳坑</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-24273">發功：掃瞄 g0v，偵測有哪些專案踩到了本所的絕對領域，以便入侵該專案</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-24273">戳樂：找出這些專案的弱點，挾壓倒性的研究資源戳中痛處，使之補強</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="4" class="list-number1"><li><span class="author-p-24273">補刀：拿出關鍵資料，對專案訴求對象使出致命一擊</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ol start="5" class="list-number1"><li><span class="author-p-24273">具現化：與政府部門、非政府組織、公民團體等三次元單位聯繫，成為 g0v 對外的橋樑</span></li></ol></div>
+<div class="ace-line gutter-author-p-24377 emptyGutter"><ul class="list-comment2"><li><span class="author-p-24377">我的念就是伸縮自如的愛啊啊啊啊啊啊啊啊啊啊</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-comment2"><li><span class="author-p-24273">樓上最近發爐 XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ol start="6" class="list-number1"><li><span class="author-p-52366">國策智庫：針對屬於本所領域的國家政策提出分析報告、建議方案，和文化部同仁合作製作簡明易懂的圖文解說，讓國家政策不再複雜難懂，公民也不是呆呆的做就對了</span></li></ol></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用工具</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">腦波</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">使用語言</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">各宅界術語</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">對這份工作有疑問嗎？請洽其他已出櫃的所長們</span><span class="author-p-65732">，</span><span class="author-p-52653">或是發問如何加入沒列在這邊的研究所</span><span class="author-p-24273">：</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">法律研究所所長：Isabel、</span><span class="author-p-52366">林孟酋</span><span class="author-p-56230"> </span><span class="author-p-66281">(jdkcupid)</span><span class="author-p-52366">、</span><span class="author-p-56230">Richard Lin (</span><span class="author-p-52366">legist </span><span class="author-p-56230">旅</span><span class="author-p-52366">強</span><span class="author-p-56230">)</span><span class="author-p-52366">、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">兩岸事務研究所所長：賴律師-兩督盟、雨蒼、</span><span class="author-p-52366">Angus、</span><span class="author-p-66228 attrlink url"><a class="attrlink" href="http://itrs821.idv.tw" title="http://itrs821.idv.tw">JoeWang</a></span><span class="author-p-52366">、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">國會研究所所長：莉婷-公督盟、</span><span class="author-p-52366">Angus、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">衛生福利研究所所長：于楟-兒福聯盟、iamblue、Jedi、Peggy、Pofeng、</span><span class="author-p-52366">tsaiid、適瑋-消防員、蔡依達、Sami、ETBlue、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">傳播研究所所長：</span><span class="author-p-24499"> </span><span class="author-p-24499 attrlink url internal"><a class="attrlink" href="https://hackpad.com/ep/profile/vVIBBezudFo" title="https://hackpad.com/ep/profile/vVIBBezudFo">nchild</a></span><span class="author-p-24273">、</span><span class="author-p-66222">Bowco</span><span class="author-p-52366">、Jimmy Huang、Grace Wang、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">民主制度研究所所長：Pofeng、家華-台大政治、</span><span class="author-p-52366">Angus、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">經濟研究所所長：Angus、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">產業分析所所長：Rex-出版業、（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">能源研究所所長：綠盟、ivan-TrendForce、（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">建築、土地、</span><span class="author-p-24273">都市計畫研究所所長：Roy、</span><span class="author-p-52366">ask Chen、chaqe、</span><span class="author-p-24273">（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-66595 emptyGutter"><ul class="list-comment1"><li><span class="author-p-66595">cool被推坑了,不過還在摸索中!反正就是胡搞蝦搞！</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">財政稅賦研究所所長：Yung-lin Ho、（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">天文物理研究所所長：Alf、（請填寫</span><span class="author-p-66269">)</span></li></ul></div>
+<div class="ace-line gutter-author-p-65980 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65980">咦咦，上面的Alf是我嗎？</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-comment1"><li><span class="author-p-52366">樓上終於發現自己被推坑了嗎？ XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">農業糧食研究所所長：terry、（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">社會統計研究所所長：</span><span class="author-p-66024"> </span><span class="author-p-52366">Bryan、（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-52366">交通暨警務研究所所長：odie、（請填寫）</span></li></ul></div>
+<div class="ace-line gutter-author-p-68546 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-68546">不是很懂要如何加入呀，我們是保險雲世代網站，是保險專業，希望能把大家解決祠會保險和商業保險的問題。</span></li></ul></div>
+<div class="ace-line gutter-author-p-56105 emptyGutter"><ul class="list-comment2"><li><span class="author-p-56105">召喚小天使 lanfon72 ！</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273 b"><b>助益事項</b></span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">您必須了解：</span></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">以上職缺一旦應徵，經由您自己批准後立刻生效</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-24273">以上職缺一旦應徵，您將同時擔任研究院院長一職，責無旁貸</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><span class="author-p-24273">若您同意以上規定，請在出櫃所長欄填上自己的名號，宣誓就職。新官上任先找到並加入 irc / facebook group / google group / people hub ，和其他部會首長打招呼並自我介紹，以利將來彼此推坑。</span></div>
+<div class="ace-line gutter-author-p-24499 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24499">&gt;&lt;，直接被推坑，大傳研究所是要做啥的？</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24273">就是研究如何有效散播資訊，例如：製作懶人包 XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-24336 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24336">nchild早已自己跳坑無法自拔了，幫找下線 ^^ txt組也要充員！</span></li></ul></div>
+<div class="ace-line gutter-author-p-24499 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24499">那我改一下吧！現在沒有大眾了。</span></li></ul></div>
+<div class="ace-line gutter-author-p-24273 emptyGutter"><ul class="list-comment1"><li><span class="author-p-24273">GJ nchild # 自開自解 issue&nbsp;</span></li></ul></div>
+<div class="ace-line gutter-author-p-65802 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65802">請問市調研究員適合去哪應徵XD?</span></li></ul></div>
+<div class="ace-line gutter-author-p-52366 emptyGutter"><ul class="list-comment1"><li><span class="author-p-52366">社會統計研究所所長？ XD</span></li></ul></div>
+<div class="ace-line gutter-author-p-57015 emptyGutter"><ul class="list-comment1"><li><span class="author-p-57015">我身兼兩個所耶～如果整理個必用交通法規10問、警察交通執法10重點、交通事故處理權益10點之類的資料有人有興趣嗎有人有興趣嗎？</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">樓上的可寫進 </span><span class="author-p-65547 url"><a href="http://citizen.wiki.g0v.tw" title="http://citizen.wiki.g0v.tw">http://citizen.wiki.g0v.tw</a></span><span class="author-p-65547"> 算是公民知識 不過我還沒想到頁面應該叫什麼..請自行決定XD</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+
+</div>
+
+<script type='text/javascript'>
+  function goLive() {
+    if (navigator.onLine) {
+      document.location = 'https://g0v.hackpad.com/ciS8hEGw7iu#%E6%88%91%E6%98%AF...%20%E5%A6%82%E4%BD%95%E5%8F%83%E8%88%87%E9%BB%91%E5%AE%A2%E6%9D%BE';
+    } else {
+      setTimeout(goLive, 250);
+    }
+  }
+  goLive();
+</script>
+
+</body>
+</html>
+ 

@@ -1,0 +1,542 @@
+<html>
+<head>
+  <script type="text/javascript">
+  // <![CDATA[
+  var clientVars = { collab_client_vars: '' };
+  // ]]>
+  </script>
+  <style type="text/css">
+    body { background: #F0F0F0; }
+    #innerdocbody {
+      width: 590px;
+      margin: auto;
+      margin-top: 60px;
+      color: #333;
+      background-color: #fff;
+      font-size: 13px;
+      line-height: 17px;
+      font-family: 'Helvetica Neue';
+      border: 1px solid #CCC;
+
+      padding-top: 1px; /* important for some reason? */
+      padding-right: 10px;
+      padding-bottom: 8px;
+      padding-left: 0px /* prevents characters from looking chopped off in FF3 */;
+      overflow: hidden;
+      /* blank 1x1 gif, so that IE8 doesn't consider the body transparent */
+      background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+    }
+
+    #innerdocbody > div:first-child span {
+      font-size: 140%;
+      font-weight: bold;
+    }
+    #innerdocbody > div:first-child{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .gutter-noauthor {
+      padding-left: 15px;
+    }
+
+    .inline-img {
+      max-width:400px;
+      max-height:300px;
+      width: expression(this.width > 400 ? 400: true);
+      height: expression(this.height > 300 ? 300: true);
+    }
+
+    .inline-tex{
+      border: 1px solid transparent;
+    }
+
+    .inline-tex:hover {
+      border: 1px dashed red;
+    }
+
+    a.attrlink {
+      /*  font-weight: bold;
+     text-decoration: none;*/
+    }
+
+    .code {
+      font-family: monospace;
+      color: #777;
+      white-space: pre-wrap;
+    }
+
+    .code span {
+      padding-left: 32px;
+      text-indent: -32px;
+      display: inline-block;
+    }
+
+    a.attrlink:hover {
+      text-decoration: underline;
+    }
+
+    .gutter-author-p-56163 { border-left: 5px solid #c7ffd5; padding-left: 10px; } .author-p-56163 { border-bottom: 2px solid #c7ffd5; } .gutter-author-p-65547 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-65547 { border-bottom: 2px solid #79d991; } .gutter-author-p-65940 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-65940 { border-bottom: 2px solid #8fffff; } .gutter-author-p-66553 { border-left: 5px solid #d9cda9; padding-left: 10px; } .author-p-66553 { border-bottom: 2px solid #d9cda9; } .gutter-author-p-62051 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-62051 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-67116 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-67116 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-66959 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-66959 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-67114 { border-left: 5px solid #d97979; padding-left: 10px; } .author-p-67114 { border-bottom: 2px solid #d97979; } .gutter-author-p-41199 { border-left: 5px solid #c7ff8f; padding-left: 10px; } .author-p-41199 { border-bottom: 2px solid #c7ff8f; } .gutter-author-p-66228 { border-left: 5px solid #a979d9; padding-left: 10px; } .author-p-66228 { border-bottom: 2px solid #a979d9; } .gutter-author-p-64166 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-64166 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-64926 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-64926 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-66892 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-66892 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-66910 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-66910 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-67126 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-67126 { border-bottom: 2px solid #79d991; } .gutter-author-p-67113 { border-left: 5px solid #c7ff8f; padding-left: 10px; } .author-p-67113 { border-bottom: 2px solid #c7ff8f; } .gutter-author-p-66881 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-66881 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-52814 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-52814 { border-bottom: 2px solid #a9d979; } 
+  </style>
+
+</head>
+
+<!-- todo: author colors, sidebar, embedly -->
+
+<body>
+<div id="innerdocbody">
+  <div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">g0v 文化部新聞局 (g0v-mo</span><span class="author-p-65547">c</span><span class="author-p-56163">-info)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>如何加入 g0v 文化部新聞局？</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">歡迎爆料鄉民、專業寫手、採訪編輯等文字工作者一起來寫文章</span><span class="author-p-65547"> 請至</span><span class="author-p-65547 i attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0vMOC/" title="http://hack.g0v.tw/g0vMOC/"><i>文化部 </i></a></span><span class="author-p-65547 i"><i>查看詳情！</i></span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">依循下列「0 開頭」的步驟後，在「1 開頭」底下找專案來採訪，開始撰寫文章 (文章有分等級喔！)</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547 b"><b>將文字變成超連結的方式：反白文字→按取左列出現的Create Link，選擇 Link to external web page</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>0. 共筆審稿區</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">Step 1&nbsp;</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">寫完文章或是在網路上看到相關文章，可以上傳到底下的 </span><span class="author-p-65547 attrlink url"><a class="attrlink" href="https://drive.google.com/folderview?id=0B67L8Y46XVAVT0JENmkxZ05tcDA&amp;usp=sharing" title="https://drive.google.com/folderview?id=0B67L8Y46XVAVT0JENmkxZ05tcDA&amp;usp=sharing">google 共用資料夾</a></span><span class="author-p-56163">喔 :D</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">已加入</span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0vMOC/" title="http://hack.g0v.tw/g0vMOC/">文化部 foldr</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">Step 2&nbsp;</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">上傳可建立 google doc，好讓其他人可以給予評論</span><span class="author-p-66553">ㄛ</span><span class="author-p-56163">文章命名格式：文章標題_作者名稱_撰寫日期</span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-56163">ex:</span><span class="author-p-65547 attrlink url"><a class="attrlink" href="https://docs.google.com/document/d/1x1Eaptc-GNrSgPPRNVNRegPdvB8Vth_dKf1c2i-Cp-4/edit" title="https://docs.google.com/document/d/1x1Eaptc-GNrSgPPRNVNRegPdvB8Vth_dKf1c2i-Cp-4/edit"> 如何把鍵盤變成公民運動的下一個武器</a></span><span class="author-p-56163">？_小兔_20130809</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">Step 3&nbsp;</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">把文章連結貼到底下的表格中，好讓其他人可以追蹤</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">請按照底下「文章等級」作分類，丟到相對應的資料夾中</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163 attrlink url url"><a class="attrlink" href="https://docs.google.com/spreadsheet/ccc?key=0Aq7L8Y46XVAVdENOSlQ1N0Z6N1ZudXdlZFlZSHIxTWc#gid=1" title="https://docs.google.com/spreadsheet/ccc?key=0Aq7L8Y46XVAVdENOSlQ1N0Z6N1ZudXdlZFlZSHIxTWc#gid=1">https://docs.google.com/spreadsheet/ccc?key=0Aq7L8Y46XVAVdENOSlQ1N0Z6N1ZudXdlZFlZSHIxTWc#gid=1</a></span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">Step 4&nbsp;</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">看到這邊你應該可以去採訪並撰寫文章囉XD</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>0. 文章等級</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">目前主要分成以下五個等級：</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">1~4 是 g0v 文化部新聞局自行撰寫或是採訪各個專案所產出的文章</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">5 轉貼分享文是在網路上看到相關文章轉貼回來</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">1-新手推坑文 (第一次參加 g0v 的心得文)</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">2-心得進階文 (參加過一次以上的心得文)</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">3-採訪介紹文 (採訪各個專案，專案介紹文)</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">4-深入報導文 (深入追蹤各個專案，議題報導)</span></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">5-轉貼分享文 (在網路上看到的媒體報導、心得分享或是相關文章)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>0. 新手指南</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-62051">New Stuff </span><span class="author-p-56163 attrlink url url"><a class="attrlink" href="https://github.com/g0v/dev/wiki/g0v-newstuff" title="https://github.com/g0v/dev/wiki/g0v-newstuff">https://github.com/g0v/dev/wiki/g0v-newstuff</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-62051 attrlink url url"><a class="attrlink" href="https://g0v.hackpad.com/ep/group/otfOozEJyvl" title="https://g0v.hackpad.com/ep/group/otfOozEJyvl">https://g0v.hackpad.com/ep/group/otfOozEJyvl</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-62051">irc詳細</span><span class="author-p-65547 attrlink url"><a class="attrlink" href="https://github.com/g0v/dev/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-IRC" title="https://github.com/g0v/dev/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-IRC">使用教學</a></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>0. 新聞採訪入門</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67116 emptyGutter"><span class="author-p-67116">1.　阿孝上課 </span><span class="author-p-67116 attrlink url url"><a class="attrlink" href="https://sites.google.com/site/jour328/" title="https://sites.google.com/site/jour328/">https://sites.google.com/site/jour328/</a></span><span class="author-p-67116">&nbsp;</span></div>
+<div class="ace-line gutter-author-p-67116 emptyGutter"><span class="author-p-67116">2.　獨立媒體學院.</span><span class="author-p-67116 attrlink url url"><a class="attrlink" href="http://www.indiemedia.tw/" title="http://www.indiemedia.tw/">http://www.indiemedia.tw/</a></span></div>
+<div class="ace-line gutter-author-p-67116 emptyGutter"><span class="author-p-67116">3.　BBC新聞學院 </span><span class="author-p-67116 attrlink url url"><a class="attrlink" href="http://www.bbc.co.uk/academy/chinese-trad" title="http://www.bbc.co.uk/academy/chinese-trad">http://www.bbc.co.uk/academy/chinese-trad</a></span></div>
+<div class="ace-line gutter-author-p-67116 emptyGutter"><span class="author-p-67116">4.　PeoPo 公民新聞 </span><span class="author-p-67116 attrlink url url"><a class="attrlink" href="http://www.peopo.org/" title="http://www.peopo.org/">http://www.peopo.org/</a></span><span class="author-p-67116"> (網頁拉到最下方可看到「線上教學」區)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>0. To do (管理人：Lee、小兔)</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-56163">g0v 組織架構</span><span class="author-p-62051">： </span><span class="author-p-65547 attrlink url internal"><a class="attrlink" href="/q0KbGyfswfK#%26%2322294%3B%26%2335498%3Bg0v" title="/q0KbGyfswfK#%26%2322294%3B%26%2335498%3Bg0v">圖說g0v</a></span><span class="author-p-65547">&nbsp;</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-task1"><li><span class="author-p-56163">文化部新聞局常用工具介紹，ex: </span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://citizen.wiki.g0v.tw/index.php?title=%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8hackPad%E5%B0%B1%E4%B8%8A%E6%89%8B" title="http://citizen.wiki.g0v.tw/index.php?title=%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8hackPad%E5%B0%B1%E4%B8%8A%E6%89%8B">hackpad</a></span><span class="author-p-65547"> </span><span class="author-p-56163">, google drive, irc (超簡易介紹文)</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-56163">如何加入文化部新聞局</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-56163">共筆審稿區</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163">0. What?</span></li></ul></div>
+<div class="ace-line gutter-author-p-66959 emptyGutter"><span class="author-p-66959">讀者設定?想要傳達的目標?希望引發的迴響?</span></div>
+<div class="ace-line gutter-author-p-66959 emptyGutter"><span class="author-p-66959">18~25歲，科技媒體上的報導不需要太深入，以科普文的方式撰寫~(inside，P</span><span class="author-p-65547">anSci</span><span class="author-p-66959">科學)</span></div>
+<div class="ace-line gutter-author-p-66959 emptyGutter"><span class="author-p-66959">可以參考:獨立媒體學院 _ </span><span class="author-p-66959 attrlink url url"><a class="attrlink" href="http://www.indiemedia.tw/" title="http://www.indiemedia.tw/">http://www.indiemedia.tw/</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>0. How? (括弧請填認領人姓名)</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-hone1"><li><span class="author-p-56163 b"><b>1. 可訪問的專案在底下</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b s"><b><s>64</s></b></span><span class="author-p-41199 b s"><b><s>88</s></b></span><span class="author-p-62051 b s"><b><s>5公益律師呼叫系統</s></b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>協助全球失學兒童就學平台</b></span><span class="author-p-56163 b"><b> </b></span><span class="author-p-66959 b"><b>(jab認養)</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><ul class="list-hone1"><li><span class="author-p-66228 attrlink url"><a class="attrlink" href="http://goo.gl/GIZrbD" title="http://goo.gl/GIZrbD">Taiwan Online , T.O</a></span><span class="author-p-66228 b"><b> (偉尼基, 包子)</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-66228">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><span class="author-p-66228">現在像臉書或搜尋會根據你的喜好或朋友圈來篩選你的訊息。很多人得到意見資訊的管道越來越少，而可能封閉在自己的小圈子中。透過T.O，一些社會上的事情將可以即時得知，當一個人內心深處的同理心一直被觸碰到，可能就會付出行動，最後成為改變這個社會的一股力量。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-66228">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><span class="author-p-66228">台灣Online即為台灣全民即時資訊新聞網。網頁的介面想設計成像臉書一樣的模樣，但不同於臉書的是，它不像臉書一樣只看得到朋友的狀態，每個人看到的資訊都是一模一樣的，而發文內容也會有不同的類別區分，例如：新聞、交通、活動、推薦與促銷、氣象天氣…等，方便使用者閱讀。因為想做即時的報導，所以設定每則發文最多顯示一天。更特別的是它結合了地圖的功能，每則發文都要鎖定一個地點。當你在一個定點時，可以搜尋附近的活動和推薦餐廳，得到即時最需要的資訊。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-66228">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><span class="author-p-66228">一般大眾</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><span class="author-p-66228">本計劃開始於2012年底, 目前參與人員五人, 預計開發web與app版本</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><span class="author-p-66228">目前是想先做網頁版，再慢慢進展開發出手機APP軟體。目前網頁版還在測試，很多功能都還在構想當中，例如：有構想說此網站的內容可以轉發到臉書上，讓更多人知道這網站的資訊。因為此專案和其他專案的功能有些部分是重複的，所以未來可能會協商共用資料庫或研討其他合作的方案來增加這專案的豐富性與完整性。發起人表示, 歡迎更多對這專案有興趣的人加入，因為不只是需要寫程式的人，還需要很多使用者來體驗並提出意見，讓專案內容更完整。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>新聞小幫手</b></span><span class="author-p-64166">(ballII)</span><span class="author-p-67116 b"><b>&nbsp;</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">新聞人礙於時間壓力與收視率壓力，報導內容經常出現誇飾聳動、查證不足、錯誤百出的現象。而讀者也因忙碌，往往沒有時間對所有新聞一一查證，所以新聞小幫手要幫大家記住大家最近看過哪些新聞，並進行查證，如果新聞有錯就主動通知你，避免你不小心把錯誤資訊記在腦中了。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">小幫手是一個瀏覽器外掛，對你正在閱讀的新聞文字進行偵測，或記錄你N天內曾經閱讀的新聞，然後跳出偵測結果通知，顯示資料庫對此新聞的評價（例如新聞內容被指出有誤）。資料庫來自網友對新聞的回報（評分與檢舉），與網友提供的文獻證據連結。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">使用瀏覽器閱讀新聞者</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-提供簡易使用者介面，包含下列功能：</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">1. 讓網友能對新聞字句加註標籤（如「錯誤」、「誇大」），並輸入評論或文獻證據。將滑鼠移到被標註字句時，可跳出前人評論內容。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">2. 讓資深新聞閱讀者能對新聞全文的正確性進行評分，系統會呈現統計結果。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64926 emptyGutter"><span class="author-p-64926">3. 提議增加標注「記者」的功能，也就是針對該文的記者（包括註明是哪家媒體）進行辨識，告訴大家這位記者的「問題率」，進行數據上的評比（可以在單一頁面上顯示排行榜，例如：本月問題記者），進而達到媒體監督的目的。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-資料庫與評論依據參考：NewsDiffs、國際新聞原文、原研究論文、闢謠網站（網路追追追、snopes.com、⋯⋯）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-分工方式：</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">＊後端程式</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">＊回報網頁前端（回報步驟、評註類別、評分機制）</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">＊Browser Extension</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">＊資料收集</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-64166">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">(8/10)</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">1. 在facebook上，可成功對所引用新聞的連結與標題進行關鍵字偵測，跳出警示文字。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">2. 在一般新聞網站上，可成功對新聞標題進行關鍵字偵測，跳出警示文字。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">3. 回報介面研發中。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b s"><b><s>發電成本計算機</s></b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>政誌</b></span><span class="author-p-66892 b"><b>(Fumi Miyabe)</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">台灣從來沒有這種事件列表：關於社會運動、環境運動、抗議爭取權益、人權…等議題，以時間軸一目了然地簡明顯示。Jimmy在今年看到美麗灣飯店做的事件時間軸後，有感於權勢方可以投入大量時間和金錢，做出漂亮的表面包裝，而身為反對方的社運者卻沒有此資源和紀錄，認為需要有個資訊技術工作者跳出來來做。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構</span><span class="author-p-66892">想</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">在參考過幾個時間軸程式後，選擇取用紐約時報所開放的時間軸程式碼；</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">未來或許有機會採用別的方式。</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">目前因事件內容不易取得，資料來源以維基百科記載的內容為主。</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">2013年7月開始撰寫製作後，放到g0v.tw零時政府上後，有興趣的人丟出Idea，一起來執行。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">一般人。我們在生活中有很多來源source，卻沒有完整的index。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url url"><a class="attrlink" href="https://github.com/g0v/twangry/issues" title="https://github.com/g0v/twangry/issues">https://github.com/g0v/twangry/issues</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 b"><b>15 Open Issues&nbsp; Sort: Newest</b></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/pull/46" title="https://github.com/g0v/twangry/pull/46">Fix route error in public/*</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/44" title="https://github.com/g0v/twangry/issues/44">initialize script</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/43" title="https://github.com/g0v/twangry/issues/43">需多從wiki抓的新聞網頁，已經消</a></span><span class="author-p-66892">失</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/42" title="https://github.com/g0v/twangry/issues/42">加入wikipedia的「台灣社會運動」模版</a></span><span class="author-p-66892"> feature</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/41" title="https://github.com/g0v/twangry/issues/41">時間顯示格式統一</a></span><span class="author-p-66892"> bug</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/40" title="https://github.com/g0v/twangry/issues/40">反轉時間軸</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/34" title="https://github.com/g0v/twangry/issues/34">跨wiki page parse</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/29" title="https://github.com/g0v/twangry/issues/29">環境資訊協會 - 環境新聞事件表</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/28" title="https://github.com/g0v/twangry/issues/28">苦勞網既有的事件清單</a></span><span class="author-p-66892"> feature</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/19" title="https://github.com/g0v/twangry/issues/19">民國年份的處理</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/11" title="https://github.com/g0v/twangry/issues/11">使用者驗證機制</a></span><span class="author-p-66892"> feature</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/9" title="https://github.com/g0v/twangry/issues/9">以wikipedia 的資料為基礎，讓使用者可為其增加額外的媒體</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/7" title="https://github.com/g0v/twangry/issues/7">讓使用者可增加事件</a></span><span class="author-p-66892"> feature</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/5" title="https://github.com/g0v/twangry/issues/5">更新首頁的template</a></span><span class="author-p-66892"> feature</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/3" title="https://github.com/g0v/twangry/issues/3">Increase maximum zoom in level</a></span><span class="author-p-66892"> bug</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892 attrlink url url"><a class="attrlink" href="https://github.com/g0v/twangry/issues/milestones" title="https://github.com/g0v/twangry/issues/milestones">https://github.com/g0v/twangry/issues/milestones</a></span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">(目前2013/8/10)</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">1.歷史事件補齊 40%</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">2.routing換裝 100%</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">3.中文日期parser革新 78%</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">4.首頁改版 57%</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">5.時間頁面/時間軸修整 33%</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-66892">需要的支援</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">1.designer</span></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">2.目前事件條目不夠多，已有足夠的事件來源，需要擅長處理文字者，以手動方式貼入資料。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-66892">目前參與者</span></li></ul></div>
+<div class="ace-line gutter-author-p-66892 emptyGutter"><span class="author-p-66892">Jimmy pm5 院長 阿端 力榮</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>eCourt 侏羅紀公園</b></span><span class="author-p-64166 b"><b> (ballII)</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">蒐集整理各議題歷年來的判例，對全文字句標註關鍵字、進行統計，以簡明易懂方式呈現給需要者（壓力團體）。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">「eCourt 侏羅紀公園」的命名靈感來自「恐龍法官」一詞，指長久受台灣法學教育訓練，但對現今社會現況了解不足、判決依據亦不可靠的部分法官。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">現在的法條與判決分開儲存於不同資料庫。eCourt第一步基礎工程就是把判例原文不易以直覺理解的部分進行分析、以關鍵字標註重點所在，確認每個細節是否為依法宣判。對法條與判決資料依年份與地域進行整理，可釐清歷年判決依據的關鍵脈絡。資料的呈現有助於發掘判例疑點，進而整理出訴訟上有效的攻擊論點，以求公共議題被合理依法審判。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">以下以範例說明預期效果：</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">情境一：假若現在你不是法律人，想看成功或是陷入困境的案子。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">例：你看到美麗灣新聞 &gt; 知道有法律判決 &gt; 知道法律判決跟哪些法有關 &gt; 想查詢哪些法有哪些問題，或哪些法官判決有問題。先知道問題才能有行動方向，進而參與連署：修法或監督恐龍法官。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">情境二：那再假若你心中關心的議題還沒有成為法律案件，你想知道怎麼改變。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">例：蘭嶼生態區建水泥廠 &gt; 參考成功案例（比如說美麗灣已成功獲得另外提案）發起連署，對台東縣政府施予壓力。另外，也可以援引美麗灣判決上法院提告訴，告台東縣政府。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">壓力團體（有所訴求，故對議題施予壓力、進行督促的團體）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-訴訟判例資料來源：</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">全國法規資料庫</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166 attrlink url url"><a class="attrlink" href="http://law.moj.gov.tw/LawClass/LawContent.aspx?PCODE=O0090001" title="http://law.moj.gov.tw/LawClass/LawContent.aspx?PCODE=O0090001">http://law.moj.gov.tw/LawClass/LawContent.aspx?PCODE=O0090001</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">司法院法學資料檢索系統</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166 attrlink url url"><a class="attrlink" href="http://jirs.judicial.gov.tw/FJUD/" title="http://jirs.judicial.gov.tw/FJUD/">http://jirs.judicial.gov.tw/FJUD/</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">蠻野心足2012年報(p6,7) ：過去三年蠻野心足所處理之案號</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166 attrlink url url"><a class="attrlink" href="http://zh.wildatheart.org.tw/story/65/7300" title="http://zh.wildatheart.org.tw/story/65/7300">http://zh.wildatheart.org.tw/story/65/7300</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">Ronny提供的案號db</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166 attrlink url url"><a class="attrlink" href="https://dl.dropboxusercontent.com/u/8336403/db.sqlite.gz" title="https://dl.dropboxusercontent.com/u/8336403/db.sqlite.gz">https://dl.dropboxusercontent.com/u/8336403/db.sqlite.gz</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">評律網</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166 attrlink url url"><a class="attrlink" href="http://www.pingluweb.com" title="http://www.pingluweb.com">http://www.pingluweb.com</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-介紹評律網窗口，計畫與律評網討論合作可能性。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-提供各壓力團體議題相關tag，請益如何更有效率爬相關tag的判決。</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">關鍵字tag：</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">相關法條, eg 環評法</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">專業語彙, eg 主管機關, 目的主管機關&nbsp;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-後續計畫拜訪團體清單：</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">農陣</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">地球公民基金會</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-事件依時間軸呈現（可能與「政誌」連結）：</span></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166 attrlink url url"><a class="attrlink" href="http://fact.g0v.tw/" title="http://fact.g0v.tw/">http://fact.g0v.tw/</a></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">-事件依據地圖呈現</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">(8/10)</span></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-66910">後續請益確認實作方向之前輩：</span></li></ol></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-66910">拜訪</span><span class="author-p-66910 b"><b>律評網</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-66910">期望拜訪莊大衛律師</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-66910">請求律評網協助爬相關議題之判例。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-66910">或是懇請協助增加議題導向相關之tag。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-66910">拜訪</span><span class="author-p-66910 b"><b>g0v.twlaw</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-66910">Victor Hsieh (g0v.twlaw)：請求或請益如何爬環保法等還沒抓下來的法規進g0v.twlaw&nbsp;</span></li></ul></div>
+<div class="ace-line gutter-author-p-67126 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-67126 attrlink url url"><a class="attrlink" href="https://github.com/victorhsieh/tw-law-corpus" title="https://github.com/victorhsieh/tw-law-corpus">https://github.com/victorhsieh/tw-law-corpus</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-66910">拜訪壓力團體：</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-66910 b"><b>台灣農業陣線</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-66910 attrlink url url"><a class="attrlink" href="http://www.taiwanruralfront.org/" title="http://www.taiwanruralfront.org/">http://www.taiwanruralfront.org/</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-66910">希望拜訪的前輩：詹順貴律師 （環保律師）,徐士榮教授（政大地政系）</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-66910 b"><b>地球公民基金會</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-66910 attrlink url url"><a class="attrlink" href="http://www.cet-taiwan.org/people" title="http://www.cet-taiwan.org/people">http://www.cet-taiwan.org/people</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-66910">希望拜訪的前輩：廖本全教授 （不動產與城鄉環境學系）</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-indent3"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-67126 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-66910">已</span><span class="author-p-67126">架</span><span class="author-p-66910">設</span><span class="author-p-67126 attrlink url"><a class="attrlink" href="http://emovements.blogspot.tw/" title="http://emovements.blogspot.tw/">eMovements Blog </a></span><span class="author-p-66910">(google blogger)</span></li></ol></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-66910">需要開始將eMovements的願景理念</span></li></ul></div>
+<div class="ace-line gutter-author-p-66910 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-66910">架站 （暫緩）</span></li></ol></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-hone1"><li><span class="author-p-67114 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/r7bWv19xZYE" title="https://g0v.hackpad.com/r7bWv19xZYE">立院看門狗</a></span><span class="author-p-67114"> (Veck + 祐甫)</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">立法院開會之前會有預報，想要在立法院開會之前就先了解立法院將要做什麼事情，可以準備追蹤這件事情的進展，透明化立法院進行的事情</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">高村長有一支可以取得預報的程式&#34;立法院預報API&#34;，透過取得立法院預報，可能是法案或是事件，放入Pool，並定時update內容是否有new，開放讓使用者去訂閱有興趣的議題及相關的法條，這些事情會自動透過 email 或 facebook 推送給訂閱者</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">資料公開：立法院預報</span></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">訂閱者：一般大眾</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-67114">取得並確認是最新的預報內容</span></li></ol></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ol start="2" class="list-number1"><li><span class="author-p-67114">打造推送訊息的功能</span></li></ol></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ol start="3" class="list-number1"><li><span class="author-p-67114">結合公報(開會結果)的推送</span></li></ol></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">建立了related term list (pool)</span></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">完成拿到與確認最新預報的機制 (polling)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67113 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67113">人力需求</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><span class="author-p-67114">要會寫</span><span class="author-p-67113"> </span><span class="author-p-67114">Node.js</span><span class="author-p-67113"> </span><span class="author-p-67114">和</span><span class="author-p-67113"> </span><span class="author-p-67114">Facebook app, front-end (UX)，javascript</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-hone1"><li><span class="author-p-67114 attrlink url"><a class="attrlink" href="https://g0v.hackpad.com/-g0v--SUkMbG4IV6v" title="https://g0v.hackpad.com/-g0v--SUkMbG4IV6v">你被服貿了嗎</a></span><span class="author-p-62051 b"><b>？</b></span><span class="author-p-67116 b"><b>(Cate)</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span><span class="author-p-67116">　</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>服務貿易協定受災地圖</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-hone1"><li><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://citizen.wiki.g0v.tw/" title="http://citizen.wiki.g0v.tw/">公民百科</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-65547">平台</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">wikipedia 所使用的 mediawiki</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">記錄公民可能會關心的</span><span class="author-p-65547 u"><u>台灣</u></span><span class="author-p-65547"> </span><span class="author-p-65547 u"><u>社會議題</u></span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">讓人可以「懶著關心、輕鬆參與」</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">藉由詳細化頁面而使其成為可懶人包化的單一頁面，由多數頁面所集合而成的百科，則成為「懶人包的懶人包」</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-65547">儲存範圍</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">籍由目的性而延伸，對於百科所儲存的資料做相對應的規範，由</span><span class="author-p-65547 u"><u>社會</u></span><span class="author-p-65547">作為百科的主要核心儲存範圍，產生相關主題群：「政府」、「社會議題」、「新聞爭議」。</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">補足維基所缺少的</span><span class="author-p-65547 u"><u>主題</u></span><span class="author-p-65547">相關資料</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">確實記載相關出處及來源</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">保持客觀，列出各方看法</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">盡可能備份相關新聞及資訊</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">相關議題、頁面的資訊需求者</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">dump wikipedia現有的資料到 citizenpedia</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment3"><li><span class="author-p-65547">dump的資料範圍設定</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment3"><li><span class="author-p-65547">產生獨立專案 - mediawiki 資料 dump 器</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">其他黑客專案與百科有的相關資料， dump 到 citizenpedia</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment3"><li><span class="author-p-65547">如立院看門狗、立法院專案所使用的立院開會資料、公告、委員發言資料等</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">制定各主題常用的樣板及格式、相關法規及規範資訊補完，</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><span class="author-p-65547 u"><u>開放外部 beta 使用</u></span></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">人性化使用介面，相關上手文撰寫</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">廣宣至各平台，向各懶人包製作者詢問編入百科意願</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">FB account connection, conut friends pay attentions.</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">parse 報紙特定主題關鍵字資料, dump.</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-65547">已完成的</span><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-65547">server架設完成, </span><span class="author-p-65547 attrlink url"><a class="attrlink" href="http://citizen.wiki.g0v.tw/" title="http://citizen.wiki.g0v.tw/">公民百科</a></span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-65547">現有的坑</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">wiki 間相互 dump &amp; recheck 的程式 坑</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">樣板制式的 CSS樣板/排板 坑</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">著作權、創用CC3.0的相關法律條款及聲明 坑</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">mediawiki 後台操作及說明文撰寫 坑</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-task2"><li><span class="author-p-65547">wiki 新手無痛編輯教學文 坑</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>動民主 1.0</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>動民主 2.0</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>零時通關</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b s"><b><s>萌典</s></b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>寵物需要我</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>國土管理局報告</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><ul class="list-hone1"><li><span class="author-p-62051 b"><b>關廠工人地圖</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67113 emptyGutter"><ul class="list-hone1"><li><span class="author-p-67113 b"><b>實價登錄 Data Mining</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-hone1"><li><span class="author-p-66881">roadpin</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><span class="author-p-66881">&nbsp;(ZheAnLin)</span></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">目的</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">1.其他縣市的路況資料能夠像台北的一樣容易查詢、使用。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">2.使用者能夠更容易地回報最新路況。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">3.使用者能夠更輕鬆的使用路況資訊。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">構想</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">1.蒐集各地路況資料，建立一個有所有道路情況的資料庫。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">2.建立一個新的回報頁面、回報機制，使用者能輕鬆地回報最新路況，以利資料庫迅速更 新。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">3.以盡量不影響、不打擾使用者的方式，提供一個服務給使用者，如使用者開車時可以輕鬆簡單的知道路況資訊，以利使用者規劃路程。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">4.對於程式開發者，提供API存取這些路況資料庫。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-56163">對象</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">道路使用者</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">執行計畫</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">1.建立資料庫。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">2.提供API存取資料庫。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">3.確立呈現資料的方式。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">4.建立回報頁面、回報機制。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">5.集思廣益，如何提供服務給使用者。</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-67114 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67114">進度</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">要如何呈現這些資料</span></li></ul></div>
+<div class="ace-line gutter-author-p-66881 emptyGutter"><ul class="list-indent1"><li><span class="author-p-66881">製作回報頁面</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+
+</div>
+
+<script type='text/javascript'>
+  function goLive() {
+    if (navigator.onLine) {
+      document.location = 'https://g0v.hackpad.com/NX60cqNWwpi#g0v%20%E6%96%87%E5%8C%96%E9%83%A8%E6%96%B0%E8%81%9E%E5%B1%80%20(g0v-moc-info)';
+    } else {
+      setTimeout(goLive, 250);
+    }
+  }
+  goLive();
+</script>
+
+</body>
+</html>
+ 

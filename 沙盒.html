@@ -1,0 +1,383 @@
+<html>
+<head>
+  <script type="text/javascript">
+  // <![CDATA[
+  var clientVars = { collab_client_vars: '' };
+  // ]]>
+  </script>
+  <style type="text/css">
+    body { background: #F0F0F0; }
+    #innerdocbody {
+      width: 590px;
+      margin: auto;
+      margin-top: 60px;
+      color: #333;
+      background-color: #fff;
+      font-size: 13px;
+      line-height: 17px;
+      font-family: 'Helvetica Neue';
+      border: 1px solid #CCC;
+
+      padding-top: 1px; /* important for some reason? */
+      padding-right: 10px;
+      padding-bottom: 8px;
+      padding-left: 0px /* prevents characters from looking chopped off in FF3 */;
+      overflow: hidden;
+      /* blank 1x1 gif, so that IE8 doesn't consider the body transparent */
+      background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+    }
+
+    #innerdocbody > div:first-child span {
+      font-size: 140%;
+      font-weight: bold;
+    }
+    #innerdocbody > div:first-child{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .gutter-noauthor {
+      padding-left: 15px;
+    }
+
+    .inline-img {
+      max-width:400px;
+      max-height:300px;
+      width: expression(this.width > 400 ? 400: true);
+      height: expression(this.height > 300 ? 300: true);
+    }
+
+    .inline-tex{
+      border: 1px solid transparent;
+    }
+
+    .inline-tex:hover {
+      border: 1px dashed red;
+    }
+
+    a.attrlink {
+      /*  font-weight: bold;
+     text-decoration: none;*/
+    }
+
+    .code {
+      font-family: monospace;
+      color: #777;
+      white-space: pre-wrap;
+    }
+
+    .code span {
+      padding-left: 32px;
+      text-indent: -32px;
+      display: inline-block;
+    }
+
+    a.attrlink:hover {
+      text-decoration: underline;
+    }
+
+    .gutter-author-p-56217 { border-left: 5px solid #8fffab; padding-left: 10px; } .author-p-56217 { border-bottom: 2px solid #8fffab; } .gutter-author-p-68854 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-68854 { border-bottom: 2px solid #a9d979; } .gutter-author-p-67945 { border-left: 5px solid #d9c179; padding-left: 10px; } .author-p-67945 { border-bottom: 2px solid #d9c179; } .gutter-author-p-65569 { border-left: 5px solid #ffe38f; padding-left: 10px; } .author-p-65569 { border-bottom: 2px solid #ffe38f; } .gutter-author-p-65783 { border-left: 5px solid #c1d9a9; padding-left: 10px; } .author-p-65783 { border-bottom: 2px solid #c1d9a9; } .gutter-author-p-67479 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-67479 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-64564 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-64564 { border-bottom: 2px solid #79d991; } .gutter-author-p-65732 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-65732 { border-bottom: 2px solid #a9d979; } .gutter-author-p-65980 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-65980 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-66347 { border-left: 5px solid #c7ff8f; padding-left: 10px; } .author-p-66347 { border-bottom: 2px solid #c7ff8f; } .gutter-author-p-67503 { border-left: 5px solid #a9b5d9; padding-left: 10px; } .author-p-67503 { border-bottom: 2px solid #a9b5d9; } .gutter-author-p-66203 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-66203 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-66228 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-66228 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-40913 { border-left: 5px solid #a9b5d9; padding-left: 10px; } .author-p-40913 { border-bottom: 2px solid #a9b5d9; } .gutter-author-p-66307 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-66307 { border-bottom: 2px solid #7991d9; } .gutter-author-p-65983 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-65983 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-65926 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-65926 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-65920 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-65920 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-65650 { border-left: 5px solid #8fabff; padding-left: 10px; } .author-p-65650 { border-bottom: 2px solid #8fabff; } .gutter-author-p-65885 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-65885 { border-bottom: 2px solid #d979c1; } .gutter-author-p-65772 { border-left: 5px solid #ffe38f; padding-left: 10px; } .author-p-65772 { border-bottom: 2px solid #ffe38f; } .gutter-author-p-65297 { border-left: 5px solid #a979d9; padding-left: 10px; } .author-p-65297 { border-bottom: 2px solid #a979d9; } .gutter-author-p-65835 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-65835 { border-bottom: 2px solid #8fffff; } .gutter-author-p-69347 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-69347 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-65769 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-65769 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-52222 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-52222 { border-bottom: 2px solid #79d991; } .gutter-author-p-52241 { border-left: 5px solid #ff8fe3; padding-left: 10px; } .author-p-52241 { border-bottom: 2px solid #ff8fe3; } .gutter-author-p-55664 { border-left: 5px solid #a9d979; padding-left: 10px; } .author-p-55664 { border-bottom: 2px solid #a9d979; } .gutter-author-p-58492 { border-left: 5px solid #c7ffd5; padding-left: 10px; } .author-p-58492 { border-bottom: 2px solid #c7ffd5; } .gutter-author-p-52402 { border-left: 5px solid #c1d9a9; padding-left: 10px; } .author-p-52402 { border-bottom: 2px solid #c1d9a9; } .gutter-author-p-52821 { border-left: 5px solid #c7d5ff; padding-left: 10px; } .author-p-52821 { border-bottom: 2px solid #c7d5ff; } .gutter-author-p-56105 { border-left: 5px solid #ffe38f; padding-left: 10px; } .author-p-56105 { border-bottom: 2px solid #ffe38f; } .gutter-author-p-52803 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-52803 { border-bottom: 2px solid #7991d9; } .gutter-author-p-55493 { border-left: 5px solid #ff8f8f; padding-left: 10px; } .author-p-55493 { border-bottom: 2px solid #ff8f8f; } .gutter-author-p-55973 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-55973 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-56604 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-56604 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-60669 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-60669 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-58140 { border-left: 5px solid #c1d9a9; padding-left: 10px; } .author-p-58140 { border-bottom: 2px solid #c1d9a9; } .gutter-author-p-62068 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-62068 { border-bottom: 2px solid #7991d9; } .gutter-author-p-65413 { border-left: 5px solid #d9cda9; padding-left: 10px; } .author-p-65413 { border-bottom: 2px solid #d9cda9; } .gutter-author-p-52848 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-52848 { border-bottom: 2px solid #d979c1; } .gutter-author-p-53249 { border-left: 5px solid #c7ffd5; padding-left: 10px; } .author-p-53249 { border-bottom: 2px solid #c7ffd5; } .gutter-author-p-53254 { border-left: 5px solid #ffc7f1; padding-left: 10px; } .author-p-53254 { border-bottom: 2px solid #ffc7f1; } .gutter-author-p-53391 { border-left: 5px solid #8fffab; padding-left: 10px; } .author-p-53391 { border-bottom: 2px solid #8fffab; } .gutter-author-p-52952 { border-left: 5px solid #8fffab; padding-left: 10px; } .author-p-52952 { border-bottom: 2px solid #8fffab; } .gutter-author-p-53568 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-53568 { border-bottom: 2px solid #c78fff; } .gutter-author-p-54101 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-54101 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-56163 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-56163 { border-bottom: 2px solid #7991d9; } .gutter-author-p-68943 { border-left: 5px solid #ff8fe3; padding-left: 10px; } .author-p-68943 { border-bottom: 2px solid #ff8fe3; } .gutter-author-p-54368 { border-left: 5px solid #a979d9; padding-left: 10px; } .author-p-54368 { border-bottom: 2px solid #a979d9; } .gutter-author-p-55070 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-55070 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-55125 { border-left: 5px solid #c7ffff; padding-left: 10px; } .author-p-55125 { border-bottom: 2px solid #c7ffff; } .gutter-author-p-55944 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-55944 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-56088 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-56088 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-58493 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-58493 { border-bottom: 2px solid #7991d9; } .gutter-author-p-58553 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-58553 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-62051 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-62051 { border-bottom: 2px solid #7991d9; } .gutter-author-p-62036 { border-left: 5px solid #8fffff; padding-left: 10px; } .author-p-62036 { border-bottom: 2px solid #8fffff; } .gutter-author-p-64151 { border-left: 5px solid #ff8fe3; padding-left: 10px; } .author-p-64151 { border-bottom: 2px solid #ff8fe3; } .gutter-author-p-64166 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-64166 { border-bottom: 2px solid #d979c1; } .gutter-author-p-67219 { border-left: 5px solid #79d9d9; padding-left: 10px; } .author-p-67219 { border-bottom: 2px solid #79d9d9; } .gutter-author-p-64224 { border-left: 5px solid #c78fff; padding-left: 10px; } .author-p-64224 { border-bottom: 2px solid #c78fff; } .gutter-author-p-65547 { border-left: 5px solid #d9cda9; padding-left: 10px; } .author-p-65547 { border-bottom: 2px solid #d9cda9; } .gutter-author-p-65540 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-65540 { border-bottom: 2px solid #d979c1; } .gutter-author-p-65629 { border-left: 5px solid #ffe38f; padding-left: 10px; } .author-p-65629 { border-bottom: 2px solid #ffe38f; } .gutter-author-p-65730 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-65730 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-64553 { border-left: 5px solid #c1d9a9; padding-left: 10px; } .author-p-64553 { border-bottom: 2px solid #c1d9a9; } .gutter-author-p-67941 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-67941 { border-bottom: 2px solid #d979c1; } .gutter-author-p-65796 { border-left: 5px solid #c1a9d9; padding-left: 10px; } .author-p-65796 { border-bottom: 2px solid #c1a9d9; } .gutter-author-p-66239 { border-left: 5px solid #ffc7c7; padding-left: 10px; } .author-p-66239 { border-bottom: 2px solid #ffc7c7; } .gutter-author-p-68845 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-68845 { border-bottom: 2px solid #e3c7ff; } .gutter-author-p-65843 { border-left: 5px solid #8fffab; padding-left: 10px; } .author-p-65843 { border-bottom: 2px solid #8fffab; } .gutter-author-p-65958 { border-left: 5px solid #c7ff8f; padding-left: 10px; } .author-p-65958 { border-bottom: 2px solid #c7ff8f; } .gutter-author-p-66237 { border-left: 5px solid #fff1c7; padding-left: 10px; } .author-p-66237 { border-bottom: 2px solid #fff1c7; } .gutter-author-p-66242 { border-left: 5px solid #e3ffc7; padding-left: 10px; } .author-p-66242 { border-bottom: 2px solid #e3ffc7; } .gutter-author-p-66281 { border-left: 5px solid #ff8f8f; padding-left: 10px; } .author-p-66281 { border-bottom: 2px solid #ff8f8f; } .gutter-author-p-66358 { border-left: 5px solid #d9a9cd; padding-left: 10px; } .author-p-66358 { border-bottom: 2px solid #d9a9cd; } .gutter-author-p-66587 { border-left: 5px solid #a9d9d9; padding-left: 10px; } .author-p-66587 { border-bottom: 2px solid #a9d9d9; } .gutter-author-p-66679 { border-left: 5px solid #d979c1; padding-left: 10px; } .author-p-66679 { border-bottom: 2px solid #d979c1; } .gutter-author-p-66685 { border-left: 5px solid #d9a9a9; padding-left: 10px; } .author-p-66685 { border-bottom: 2px solid #d9a9a9; } .gutter-author-p-67215 { border-left: 5px solid #7991d9; padding-left: 10px; } .author-p-67215 { border-bottom: 2px solid #7991d9; } .gutter-author-p-67569 { border-left: 5px solid #8fabff; padding-left: 10px; } .author-p-67569 { border-bottom: 2px solid #8fabff; } .gutter-author-p-67543 { border-left: 5px solid #a9d9b5; padding-left: 10px; } .author-p-67543 { border-bottom: 2px solid #a9d9b5; } .gutter-author-p-67709 { border-left: 5px solid #79d991; padding-left: 10px; } .author-p-67709 { border-bottom: 2px solid #79d991; } .gutter-author-p-69400 { border-left: 5px solid #e3c7ff; padding-left: 10px; } .author-p-69400 { border-bottom: 2px solid #e3c7ff; } 
+  </style>
+
+</head>
+
+<!-- todo: author colors, sidebar, embedly -->
+
+<body>
+<div id="innerdocbody">
+  <div class="ace-line gutter-author-p-56217 emptyGutter"><span class="author-p-56217">沙盒</span></div>
+<div class="ace-line gutter-author-p-67945 emptyGutter"><span class="author-p-67945">沙盒是供新手隨便自由練習的地方</span></div>
+<div class="ace-line gutter-author-p-68854 emptyGutter"><span class="author-p-68854">-----------------以下開放留言 (❍ᴥ❍ʋ) ---------------&nbsp; &lt;= 這樣會不會比較好懂(?)&nbsp;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65569 emptyGutter"><span class="author-p-65569">大家好，歡迎來加入公務人員出國調察網。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56217 emptyGutter"><span class="author-p-56217">最上面比較容易看到?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56217 emptyGutter"><span class="author-p-56217">第一行是標題就是了</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-68854 emptyGutter"><span class="author-p-68854">其實我不知道最新訊息應該加在最下面還是最上面 XD</span></div>
+<div class="ace-line gutter-author-p-68854 emptyGutter"><span class="author-p-68854">看來我有點不知道該怎麼使用這麼東西( 當留言板用? )</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65783 emptyGutter"><span class="author-p-65783">Hackpad 沙盒研究</span></div>
+<div class="ace-line gutter-author-p-64564 emptyGutter"><span class="author-p-64564 b"><b>arving No More</b></span></div>
+<div class="ace-line gutter-author-p-64564 emptyGutter"><span class="author-p-64564">協助全球失學兒童重回學校。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65980 emptyGutter"><ul class="list-hone1"><li><span class="author-p-65980 b"><b>404 Not Found</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-66347 emptyGutter"><span class="author-p-66347">HIHI大家好~</span></div>
+<div class="ace-line gutter-author-p-66347 emptyGutter"><span class="author-p-66347">我是Eason :D</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67503 emptyGutter"><span class="author-p-67503">helloo~~大家好~!!</span></div>
+<div class="ace-line gutter-author-p-67945 emptyGutter"><span class="author-p-67945">可以都改別人的字耶...</span></div>
+<div class="ace-line gutter-author-p-67945 emptyGutter"><span class="author-p-67945">Test Test 1 2 3</span></div>
+<div class="ace-line gutter-author-p-67945 emptyGutter"><ul class="list-comment1"><li><span class="author-p-67945">Test OK!!!</span></li></ul></div>
+<div class="ace-line gutter-author-p-66228 emptyGutter"><ul class="list-comment1"><li><span class="author-p-66228">&nbsp;hi all, 新人偉尼基報到</span></li></ul></div>
+<div class="ace-line gutter-author-p-66203 emptyGutter"><span class=" author-p-66203 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-66203 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span><span class="author-p-66203">@</span><span class="author-p-40913">Hackpad 閒聊區/沙</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66307 emptyGutter"><span class="author-p-66307">這裡是沙盒?????</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66307 emptyGutter"><span class="author-p-66307">隨想書寫中...</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66307 emptyGutter"><span class="author-p-66307">我在想能否掛任務像bounty那樣的看板，讓大家當志工的bounty hunter?</span></div>
+<div class="ace-line gutter-author-p-66307 emptyGutter"><span class="author-p-66307">因為各專案加起來資訊太大了，不熟資訊的人不容易看到哪裡需要人手，做什麼事?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66307 emptyGutter"><span class="author-p-66307">如果是在勇者RPG上面，自動出現性質相近的任務</span></div>
+<div class="ace-line gutter-author-p-66307 emptyGutter"><span class="author-p-66307">比方說寫手就會接到某某專案需要一段多長的說明，針對什麼對象，希望什麼風格等等...就很好回應和當志工參與了</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65983 emptyGutter"><span class="author-p-66203 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span><span class="author-p-65983">天黑了，大家晚安:)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65920 emptyGutter"><span class="author-p-65920">?? </span><span class="author-p-65920 b"><b>這是哪裡</b></span><span class="author-p-65920">?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="               author-p-65650 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span><span class="author-p-40913">文字選起來之後按上面的 &#39;B&#39; 變成粗體後，該行前面會多一個 - 號可以把他變成 Heading,&nbsp; 就會出現在右邊的目錄</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65885 emptyGutter"><span class="author-p-65885">-test oao ofsv ix jn pbn tt</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56217 emptyGutter"><span class="author-p-56217">建世界奇觀要 180 天</span></div>
+<div class="ace-line gutter-author-p-65772 emptyGutter"><span class=" author-p-65772 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56217 emptyGutter"><span class="author-p-56217">阿空++</span></div>
+<div class="ace-line gutter-author-p-65772 emptyGutter"><span class=" author-p-65772 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65297 emptyGutter"><span class="author-p-65297">轟轟</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65835 emptyGutter"><span class="author-p-65835">大家好，我是 Carl。</span></div>
+<div class="ace-line gutter-author-p-65835 emptyGutter"><span class="author-p-65835">Hello, this is Carl.</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-69347 emptyGutter"><span class="author-p-69347">I&#39;m carlcarl</span></div>
+<div class="ace-line gutter-author-p-65769 emptyGutter"><span class="author-p-65769">-----------------------------------------------------------------------------------------------------------------</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65769 emptyGutter"><span class="author-p-65769">阿阿&nbsp; 大家好，我還是第一次用HACKpad，算是被黑克松的人邀請進來的吧XD</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52222 emptyGutter"><ul class="list-hone1"><li><span class="author-p-52222 b"><b>喵嗚</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-52222 emptyGutter"><span class="author-p-52222">大家好 這是什麼</span></div>
+<div class="ace-line gutter-author-p-55664 emptyGutter"><span class="author-p-55664">HI</span></div>
+<div class="ace-line gutter-author-p-52241 emptyGutter"><span class="author-p-52241">??&nbsp;&nbsp;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-69347 emptyGutter"><span class="author-p-69347">不太會用orz</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-58492 emptyGutter"><span class="author-p-58492">嗚～</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52402 emptyGutter"><span class="author-p-52402">咦，被邀請進來了</span></div>
+<div class="ace-line gutter-author-p-52821 emptyGutter"><span class="author-p-52821">Say hello</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56105 emptyGutter"><span class="author-p-56105">喵XD</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55493 emptyGutter"><span class="author-p-55493">&nbsp;囧&gt;</span></div>
+<div class="ace-line gutter-author-p-55493 emptyGutter"><span class="author-p-55493">/█</span><span class="author-p-55973">ˋ</span></div>
+<div class="ace-line gutter-author-p-55493 emptyGutter"><span class="author-p-55493">&nbsp;| |</span></div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604">&nbsp;</span></div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604">&nbsp;汪！～～～～～～～</span></div>
+<div class="ace-line gutter-author-p-60669 emptyGutter"><span class="author-p-60669">&nbsp;新版的 hackpad 嗎？</span></div>
+<div class="ace-line gutter-author-p-58140 emptyGutter"><span class="author-p-58140">&nbsp;</span></div>
+<div class="ace-line gutter-author-p-58140 emptyGutter"><span class="author-p-58140">&nbsp;</span><span class="author-p-58140 attrimg img"><img class="inline-img" src="http://2.media.collegehumor.cvcdn.com/78/84/ce207c391303ce7b998b2c9d2bb300ce-cat-tries-to-jump-off-toilet.gif" faketext="*" contenteditable="false"></span></div>
+<div class="ace-line gutter-author-p-62068 emptyGutter"><span class="author-p-62068">&nbsp;</span></div>
+<div class="ace-line gutter-author-p-62068 emptyGutter"><span class="author-p-62068">&nbsp;這是 &#34;Caturaday&#34; 版嗎？</span></div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604">&nbsp;</span></div>
+<div class="ace-line gutter-author-p-55493 emptyGutter"><ul class="list-hone1"><li><span class="author-p-55493">　</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65413 emptyGutter"><span class="author-p-65413">大家好，請多多指教。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55973 emptyGutter"><span class="author-p-55973">有人到了嗎？(抖)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52848 emptyGutter"><span class="author-p-52848">啊啊</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-53249 emptyGutter"><span class="author-p-53249">這啥?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-53254 emptyGutter"><span class="author-p-53254">這是什麼呢？可以吃的嗎？（喵～）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-53391 emptyGutter"><span class="author-p-53391">初來乍到，大家好。</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52803 emptyGutter"><span class="author-p-52803">科科</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952">在玩什麼？hackpad聊天室！</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-53568 emptyGutter"><span class="author-p-53568">簽到~</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-53254 emptyGutter"><span class="author-p-53254">這次黑客松依然會去幫忙LIVE喔，邊在自家客廳hack，邊看黑客松是多寫意的事情啊（？）</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-54101 emptyGutter"><span class="author-p-54101">大家好~我是鴨七</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56163 emptyGutter"><span class="author-p-56163">簽到～大家好～我是小兔 :D</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-68943 emptyGutter"><span class="author-p-68943">嗨大家～我是 E0，是說這裡是？！</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><ul class="list-hone1"><li><span class="author-p-52952 b"><b>反封網！</b></span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-54368 emptyGutter"><span class="author-p-54368">大家好，有空請一起來</span><span class="author-p-54368 attrlink url internal"><a class="attrlink" href="https://hackpad.com/Against-the-Master-Switch--sr1MxStPAO5" title="https://hackpad.com/Against-the-Master-Switch--sr1MxStPAO5">挑戰總開關</a></span><span class="author-p-54368">！</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52821 emptyGutter"><span class="author-p-52821">沒有NPC出來說話</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55070 emptyGutter"><span class="author-p-55070">Hi all.</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55125 emptyGutter"><span class="author-p-55125">Hello Hackpad, oh hello every body !</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55944 emptyGutter"><span class="author-p-55944">哩賀</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56088 emptyGutter"><span class="author-p-56088 autolink"><autolink>@@</autolink></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-58493 emptyGutter"><span class="author-p-58493">媽～我在這裡</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-58553 emptyGutter"><span class="author-p-58553">Hello~</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><span class="author-p-62051">._./&nbsp; 上新聞了</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604 b"><b>借問</b></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604">請問一下大家請問一下大家都都是如何去爬資料的呢？用python?java?</span></div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604">能分享一下嗎？</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62036 emptyGutter"><span class="author-p-62036">Tim Hong ++</span></div>
+<div class="ace-line gutter-author-p-62036 emptyGutter"><span class="author-p-62036">要省力的話可以用YQL! 但有robot擋就只能請神人了</span></div>
+<div class="ace-line gutter-author-p-53568 emptyGutter"><span class="author-p-53568">YQL感覺很強大阿!! 連parse都省了! 對不熟regex的人簡直是救星T^T</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52803 emptyGutter"><span class="author-p-52803">曾經用過 java HttpParser 跟 org.w3c.dom.Document，</span></div>
+<div class="ace-line gutter-author-p-52803 emptyGutter"><span class="author-p-52803">要是 split / substring 搭配得好，其實也可以省掉很多寫 regex 的機會 XD</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-58493 emptyGutter"><span class="author-p-58493">現在習慣都用nodejs解, 然後有cheerio可以用, 就直接當jquery在操作DOM</span></div>
+<div class="ace-line gutter-author-p-58493 emptyGutter"><span class="author-p-58493">不過javascript對於一些老舊的big5編碼網頁會有些苦手, 例如像原始的escape,encodeURI, encodeURIComponent都是直接utf8處理,</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><span class="author-p-40913">(真的聊開了！) cheerio++, jq++</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56604 emptyGutter"><span class="author-p-56604">我現在是先用PHP </span><span class="author-p-56604 attrlink url url"><a class="attrlink" href="http://cuab.de/" title="http://cuab.de/">http://cuab.de/</a></span><span class="author-p-56604">&nbsp; ，不過還在想有沒有更輕型的，因為只是要定期爬下一些table裡的東西</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64151 emptyGutter"><span class="author-p-64151">Hi 我是 Drake, 還處於沒力，沒有任何貢獻中~</span></div>
+<div class="ace-line gutter-author-p-64151 emptyGutter"><span class="author-p-64151">User-friendly IRC channel by hackpad?</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><span class="author-p-64166">我是新人。報名時除了選午餐葷素外，還被請求選主題。請問主題去哪兒選呢？</span></div>
+<div class="ace-line gutter-author-p-40913 emptyGutter"><ul class="list-comment1"><li><span class="author-p-40913">可可以到 idea pool 看看有沒有什麼有興趣的話，或告訴大家你打算做什麼：</span><span class="author-p-40913 url"><a href="http://hack.g0v.tw/g0v-hackath" title="http://hack.g0v.tw/g0v-hackath">http://hack.g0v.tw/g0v-hackath</a></span><span class="author-p-67219 attrlink url"><a class="attrlink" href="http://hack.g0v.tw/g0v-hackath4n/" title="http://hack.g0v.tw/g0v-hackath4n/"> </a></span><span class="author-p-40913">4n/</span></li></ul></div>
+<div class="ace-line gutter-author-p-64224 emptyGutter"><ul class="list-comment1"><li><span class="author-p-64224">我進去了四次才發現idea pool在左邊在左邊在左邊在左邊在左邊在左邊orz</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><ul class="list-comment1"><li><span class="author-p-64166">很認真的看完各種專案構想，但不確定我最適合填哪裡。我當天會認真聽各專案報告，在此我也先稍微自介一下，歡迎對我有興趣的專案主持人把我撿走～自介：我不會寫程式。我的工作是物理學術研究。我的興趣是英翻中，翻過幾支科普短文與短片，若需要翻譯我可以效勞。（我也勉強可以中翻英。）</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">不知道可以做什麼也歡迎參與公民百科 </span><span class="author-p-65547 url"><a href="http://citizen.wiki.g0v.tw/" title="http://citizen.wiki.g0v.tw/">http://citizen.wiki.g0v.tw/</a></span><span class="author-p-65547"> XD 上手難度非常低! 只要你會打字會用 wikipedia 就可以了XDDDD</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><ul class="list-comment1"><li><span class="author-p-64166">其實我第一次向g0v友建議的提案，跟公民百科很像吔！不過我那時是以核四為範例。</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><ul class="list-comment1"><li><span class="author-p-64166">如果公民百科成熟，我應該會成為加填資料的鄉民之一。不過在它成形途中，我能做什麼？</span></li></ul></div>
+<div class="ace-line gutter-author-p-64166 emptyGutter"><ul class="list-comment1"><li><span class="author-p-64166">（我在Mac上用Chrome與yahoo中文輸入，在這個hackpad介面打字好像有bug，有時不允許我選字，打一個字會跳出兩個字。）</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">如果有程式專長，可以考慮寫一個從 wikipedia dump 資料到公民百科的程式(因為wiki有很多現有的資料，但基於wiki的中立性方針，很多東西是不完整的；但如果讓每個人都手動去抓過來放會有點太辛苦XDDD)</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">如果有法律專長，可以參考一下公民百科的方向，有哪些部份是有可能侵權的；而公民百科的陰私政測、免責聲明的部份可能會牽涉到的法律問題...((如果照wikipedia現有的頁面去改寫的話)</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">css專長的話可以考慮設計各頁面的樣板；美術專長的話可以考慮畫左上角的圖XDDD</span></li></ul></div>
+<div class="ace-line gutter-author-p-65547 emptyGutter"><ul class="list-comment1"><li><span class="author-p-65547">其他專長暫時還沒想到 囧...應該可以從</span><span class="author-p-65547 b"><b>「如果它是一個專門給台灣社會寫的百科，你會希望它能有些什麼？」</b></span><span class="author-p-65547">來去思考，然後讓我們一起來討論！XD</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65540 emptyGutter"><span class="author-p-65540">勇往前進</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65629 emptyGutter"><span class="author-p-65629">安安我是新人請多指教 (嚼嚼)</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65730 emptyGutter"><span class="author-p-65730">大家好阿，小弟verysure很弱，可是對寫程式很有興趣XD</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67941 emptyGutter"><span class="author-p-67941">EragonJ&nbsp;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><span class="author-p-62051">Test sync hackpad&nbsp; test 2+++++++</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-64553 emptyGutter"><span class="author-p-64553">轟轟</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65796 emptyGutter"><span class="author-p-65796">test</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66239 emptyGutter"><span class="author-p-66239">簽到 XD 對 g0village 感興趣，不過自己分身伐樹中 XD&nbsp;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-68845 emptyGutter"><span class="author-p-68845">大家好～我是阿賢&nbsp; 很菜&gt;&#34;&lt;</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-65835 emptyGutter"><ul class="list-hone1"><li><span class="author-p-65835 b"><b>EOF</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-65835 emptyGutter"><span class="author-p-65835">End of line</span></div>
+<div class="ace-line gutter-author-p-65843 emptyGutter"><span class="author-p-65843">test</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-55944 emptyGutter"><span class="author-p-55944">大家好我昰不太會寫js的jslee</span></div>
+<div class="ace-line gutter-author-p-65958 emptyGutter"><span class="author-p-65958">我是Leo，大家好</span></div>
+<div class="ace-line gutter-author-p-65980 emptyGutter"><span class="author-p-65980">大家好我是Alf，第一次用hackpad</span></div>
+<div class="ace-line gutter-author-p-65843 emptyGutter"><span class="author-p-65843">恩我也是第一次使用呢~~</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66237 emptyGutter"><span class="author-p-66237">Hello~~~ 大家好 :)</span></div>
+<div class="ace-line gutter-author-p-66242 emptyGutter"><span class="author-p-66242">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span></div>
+<div class="ace-line gutter-author-p-66242 emptyGutter"><span class="author-p-66242">HI,wow~</span></div>
+<div class="ace-line gutter-author-p-66242 emptyGutter"><span class="author-p-66242">我是Mandy，新手一枚，找不到結尾~~</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66242 emptyGutter"><span class="author-p-66242">大家好!!~~</span></div>
+<div class="ace-line gutter-author-p-66242 emptyGutter"><span class="author-p-66242">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-62051 emptyGutter"><span class="author-p-62051">突然發現 hackpad更新了！！！！！&nbsp;&nbsp; 界面有點漂亮 :Ｄ</span></div>
+<div class="ace-line gutter-author-p-66281 emptyGutter"><span class="author-p-66281">還有這種哦～ 法律研究所所長 聽起來有點威～</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66358 emptyGutter"><span class="author-p-66358">大家好，我是小余，學得很雜但都不專精，不過還是希望能為社會出一份力，目前是希望加入自然人資訊驗證平台和匿名者爆料平台的開發，目前對於 PHP / ASP.NET / Java / Python / Android 上的開發應該都能夠馬上投入，請各位多多指教，謝謝</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-52952 emptyGutter"><span class="author-p-52952">test</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66587 emptyGutter"><span class="author-p-66587">踩一下留個腳印O_O</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66679 emptyGutter"><span class="author-p-66679 s"><s>＠＠＠&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s></span><span class="author-p-66679"> 丸子三兄弟</span></div>
+<div class="ace-line gutter-author-p-66679 emptyGutter"><ul class="list-task1"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-66679 emptyGutter"><span class="author-p-66679 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line gutter-author-p-66679 emptyGutter"><span class="author-p-66679">ㄎ</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-66685 emptyGutter"><ul class="list-comment1"><li><span class="author-p-66685">伐木工一名</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-56105 emptyGutter"><ul class="list-comment1"><li><span class="author-p-56105">看到 php ，想起 Super Tux Kart 中有這個角色：</span></li></ul></div>
+<div class="ace-line gutter-author-p-56105 emptyGutter"><span class="author-p-56105 attrimg img"><img class="inline-img" src="http://m.rudolphs.eu/media/2009/SuperTuxKart_PHP_Elephant.jpg" faketext="*" contenteditable="false"></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67219 emptyGutter"><span class="author-p-67219">test</span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-hone1"><li><span class="author-p-67215 b"><b>粗體字可以自動成 table of contents</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="author-p-67215 b"><b>H1自動底線在每行左邊mouse-over才會看到&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-67215 b"><b>45t4t4t43t435435-</b></span><span class="author-p-67215">-----</span></li></ol></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ol start="1" class="list-number2"><li><span class="author-p-67215">dgfdgdfgdfgdgf</span></li></ol></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ol start="1" class="list-number3"><li><span class="author-p-67215">dfgdfgfdgdfgd</span></li></ol></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67215">stwretrtrt</span></li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-67215">erwrewr</span></li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-67215">esheyrey</span></li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-indent3"><li>&nbsp;</li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="author-p-67215 i"><i>回覆回覆</i></span></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-task1"><li><span class="author-p-67215">完成完成</span></li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-67215">ertertrt</span></li></ul></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="author-p-67215">內容</span></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="author-p-67215 s"><s>內容</s></span></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="author-p-67215 attrlink url internal"><a class="attrlink" href="/e8C6p3dQvzK" title="/e8C6p3dQvzK">g0v BroadCast 廣播電台(每日看一下)</a></span></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="author-p-67215 attrimg img"><img class="inline-img" src="http://g0v.tw/imgs/g0v-240-invert.png" faketext="*" contenteditable="false"></span></div>
+<div class="ace-line gutter-author-p-67215 emptyGutter"><span class="           author-p-67215 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-hone1"><li><span class="author-p-67569 b"><b>粗體heading1</b></span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="author-p-67569 b"><b>粗體heading2</b></span></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="author-p-67569 i s u"><i><s><u>粗體normal就變回來了</u></s></i></span></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="author-p-67569">numbered list:</span></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ol start="1" class="list-number1"><li><span class="author-p-67569">第一層是數字</span></li></ol></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ol start="1" class="list-number2"><li><span class="author-p-67569">用縮排的第二層是字母</span></li></ol></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ol start="1" class="list-number3"><li><span class="author-p-67569">再縮排的第三層是羅馬數字</span></li></ol></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ol start="1" class="list-number4"><li><span class="author-p-67569">第四層就變回數字了</span></li></ol></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="author-p-67569">bullet list:</span></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-bullet1"><li><span class="author-p-67569">第一層是圓點</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-bullet2"><li><span class="author-p-67569">用縮排的第二層是空心圓</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-bullet3"><li><span class="author-p-67569">再縮排的第三層是方塊</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-bullet4"><li><span class="author-p-67569">第四層就變回圓點了</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-comment1"><li><span class="author-p-67569">blahblah</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-task1"><li><span class="author-p-67569">hogehoge</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-67569">foobar</span></li></ul></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="author-p-67569 attrlink url internal"><a class="attrlink" href="/UbRMyR1GliV" title="/UbRMyR1GliV">g0village - 勇者傳說</a></span></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="author-p-67569 attrimg img"><img class="inline-img" src="http://g0v.tw/imgs/g0v-240-invert.png" faketext="*" contenteditable="false"></span><span class="author-p-67569 attrimg img"><img class="inline-img" src="http://" faketext="*" contenteditable="false"></span></div>
+<div class="ace-line gutter-author-p-67569 emptyGutter"><span class="        author-p-67569 attrtable table"><span class='inline-table'><div style='' contenteditable='false'></div></span></span></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line gutter-author-p-69400 emptyGutter"><span class="author-p-69400">所以這裡是文末囉！</span></div>
+<div class="ace-line gutter-author-p-69400 emptyGutter"><ul class="list-taskdone1"><li><span class="author-p-69400">check</span></li></ul></div>
+<div class="ace-line gutter-author-p-69400 emptyGutter"><ul class="list-comment1"><li><span class="author-p-69400">偷偷在這裡測試的意思&nbsp;</span></li></ul></div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+<div class="ace-line longKeep gutter-noauthor">&nbsp;</div>
+
+</div>
+
+<script type='text/javascript'>
+  function goLive() {
+    if (navigator.onLine) {
+      document.location = 'https://g0v.hackpad.com/BouDGPIQ8yG#%E6%B2%99%E7%9B%92';
+    } else {
+      setTimeout(goLive, 250);
+    }
+  }
+  goLive();
+</script>
+
+</body>
+</html>
+ 
