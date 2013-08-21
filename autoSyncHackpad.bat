@@ -10,7 +10,6 @@ set var=%mydate%%mytime%
 REM add all new files 
 call git add . 
 call git commit -a -m "Automated commit by autoSyncHackpad on %var%" 
-call git remote add origin git@github.com:jessy1092/hackpad-test.git
 call git push
 pause
 exit
